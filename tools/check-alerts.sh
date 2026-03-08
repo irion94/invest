@@ -78,12 +78,13 @@ process_alerts() {
   local triggered_any=false
 
   while IFS='|' read -r _ ticker warunek prog strefa status _; do
-    # Wyczyść białe znaki
-    ticker=$(echo "$ticker" | tr -d ' ')
-    warunek=$(echo "$warunek" | tr -d ' ')
-    prog=$(echo "$prog" | tr -d ' ')
-    strefa=$(echo "$strefa" | tr -d ' ')
-    status=$(echo "$status" | tr -d ' ')
+    # Wyczyść białe znaki (zachowaj oryginał strefy do sed)
+    ticker=$(echo "$ticker" | xargs)
+    warunek=$(echo "$warunek" | xargs)
+    prog=$(echo "$prog" | xargs)
+    strefa_raw=$(echo "$strefa" | xargs)
+    strefa=$(echo "$strefa_raw" | tr -d ' ')
+    status=$(echo "$status" | xargs)
 
     # Pomiń nagłówki i puste linie
     [[ "$status" != "active" ]] && continue
@@ -122,14 +123,14 @@ process_alerts() {
 
       local msg="${emoji} *ALERT: ${ticker}*
 Cena: \$${price}
-Próg: ${warunek} ${prog} (${strefa})
+Próg: ${warunek} ${prog} (${strefa_raw})
 $(date '+%Y-%m-%d %H:%M')"
 
       send_alert "$msg"
       triggered_any=true
 
-      # Zmień status na triggered w pliku
-      sed -i.bak "s/| ${ticker} | ${warunek} | ${prog} | ${strefa} | active /| ${ticker} | ${warunek} | ${prog} | ${strefa} | triggered /" "$ALERTS_FILE" 2>/dev/null || true
+      # Zmień status na triggered w pliku (używamy strefa_raw ze spacjami)
+      sed -i.bak "s/| ${ticker} | ${warunek} | ${prog} | ${strefa_raw} | active /| ${ticker} | ${warunek} | ${prog} | ${strefa_raw} | triggered /" "$ALERTS_FILE" 2>/dev/null || true
     fi
 
   done < <(grep "^|" "$ALERTS_FILE")
