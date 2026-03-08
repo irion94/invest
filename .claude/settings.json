@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash tools/fetch-prices.sh:*)",
+      "Bash(bash tools/telegram-notify.sh:*)",
+      "Read(memory/*)",
+      "Edit(memory/*)"
+    ]
+  }
+}
