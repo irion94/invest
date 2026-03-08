@@ -14,8 +14,8 @@ opartego na Claude Code. Nie musisz znać programowania.
 Otwórz terminal i wpisz:
 
 ```bash
-git clone <URL_REPOZYTORIUM>
-cd invest-plan
+git clone git@github.com:irion94/invest.git
+cd invest
 ```
 
 ## Krok 3: Stwórz bota Telegram (dla alertów)
