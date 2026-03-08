@@ -1,0 +1,4 @@
+.env
+.claude/scheduled-tasks/
+*.log
+node_modules/
