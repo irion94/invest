@@ -1,17 +1,24 @@
 ---
 name: grok-consult
-description: Druga opinia od Grok (xAI) — alternatywna analiza portfela, strategii lub konkretnego instrumentu. Użyj gdy użytkownik chce konsultacji z Grok, drugiego punktu widzenia od xAI, lub porównania ocen między modelami.
+description: Analiza rynku i ryzyka recesji przez Grok (xAI) — makroekonomia, sentyment rynkowy, ocena ryzyka globalnego. Użyj gdy użytkownik chce analizy rynkowej od Grok, oceny ryzyka makro, sentymentu giełdowego lub drugiej opinii o sytuacji globalnej.
 ---
 
-# /grok-consult — Druga opinia od Grok (xAI)
+# /grok-consult — Analiza rynku i makro przez Grok (xAI)
+
+## Rola Groka w systemie
+
+Grok odpowiada za:
+- Analizę sytuacji rynkowej (indeksy, trendy, sentyment)
+- Ocenę ryzyka recesji i globalnych zagrożeń
+- Makroekonomię: stopy, inflacja, polityka monetarna
+- Geopolitykę i jej wpływ na rynki
+
+Analiza portfela i strategii — pozostaje po stronie Claude.
 
 ## Instrukcje
 
-1. Przeczytaj:
-   - `memory/portfolio.md` — aktualne pozycje
-   - `memory/strategy.md` — strategia i cele
-   - `memory/macro-risk.md` — aktualny Recession Risk Score
-   - `memory/watchlist.md` — obserwowane instrumenty
+1. Przeczytaj kontekst makro:
+   - `memory/macro-risk.md` — aktualny Recession Risk Score i snapshot wskaźników
 
 2. Sprawdź czy `GROK_API_KEY` jest skonfigurowany:
    - Uruchom: `grep GROK_API_KEY .env`
@@ -20,42 +27,38 @@ description: Druga opinia od Grok (xAI) — alternatywna analiza portfela, strat
      > "Klucz API uzyskasz na: https://console.x.ai"
    - Zakończ działanie skilla.
 
-3. Ustal temat konsultacji:
-   - Jeśli użytkownik podał ticker (np. `/grok-consult NVO`) — analiza konkretnego instrumentu
-   - Jeśli podał temat (np. `/grok-consult makro`) — analiza makroekonomiczna
-   - Jeśli brak argumentu — ogólna ocena portfela i strategii
+3. Ustal temat analizy:
+   - `/grok-consult` — ogólna analiza rynku i makro
+   - `/grok-consult recesja` — głęboka analiza ryzyka recesji
+   - `/grok-consult [indeks/sektor]` — np. `/grok-consult SP500`, `/grok-consult energia`
+   - `/grok-consult geopolityka` — wpływ geopolityki na rynki
 
-4. Przygotuj prompt dla Grok (po angielsku — lepsze wyniki modelu):
+4. Przygotuj prompt dla Groka (po angielsku):
 
 ```
-You are an experienced investment analyst. Analyze the following portfolio and provide a second opinion.
+You are a macroeconomic analyst and market strategist. Analyze the current market situation.
 
-PORTFOLIO:
-[zawartość memory/portfolio.md]
+CURRENT MACRO SNAPSHOT:
+[zawartość memory/macro-risk.md — Recession Risk Score + wszystkie wskaźniki]
 
-INVESTMENT STRATEGY:
-[zawartość memory/strategy.md — cele, horyzont, filozofia]
-
-MACRO RISK (current):
-[Recession Risk Score z memory/macro-risk.md]
-
-QUESTION:
-[konkretne pytanie na podstawie tematu konsultacji]
+ANALYSIS REQUEST:
+[temat na podstawie argumentu użytkownika]
 
 Please provide:
-1. Your assessment of the portfolio (strengths, weaknesses, risks)
-2. Key concerns given the current macro environment
-3. 2-3 specific, actionable suggestions
-4. Your overall risk rating (Low / Medium / High)
+1. Current market assessment — what is driving markets right now?
+2. Recession risk evaluation — how serious is the risk and why?
+3. Key macro risks to watch in next 30-90 days
+4. Which sectors/assets are most vulnerable? Which are defensive?
+5. Your overall market sentiment: Bullish / Neutral / Bearish — and why
 
-Be direct and concise. This is a second opinion, not financial advice.
+Be direct. Use data. No generic disclaimers.
 ```
 
-5. Wywołaj Grok API przez Bash (kompatybilny z OpenAI):
+5. Wywołaj Grok API przez Bash:
 
 ```bash
 source .env
-PROMPT="[przygotowany prompt — escapuj cudzysłowy]"
+PROMPT="[przygotowany prompt]"
 
 curl -s https://api.x.ai/v1/chat/completions \
   -H "Content-Type: application/json" \
@@ -65,33 +68,32 @@ curl -s https://api.x.ai/v1/chat/completions \
     \"messages\": [
       {
         \"role\": \"system\",
-        \"content\": \"You are a sharp, independent investment analyst. Give direct, data-driven assessments. No fluff.\"
+        \"content\": \"You are a sharp macroeconomic analyst. Give direct, data-driven market assessments. Focus on recession risk, market trends, and macro dynamics.\"
       },
       {
         \"role\": \"user\",
         \"content\": $(echo "$PROMPT" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')
       }
     ],
-    \"max_tokens\": 1000,
-    \"temperature\": 0.3
+    \"max_tokens\": 1200,
+    \"temperature\": 0.2
   }" | python3 -c "import json,sys; data=json.load(sys.stdin); print(data['choices'][0]['message']['content'])"
 ```
 
 6. Wyświetl odpowiedź w sekcji:
 
-### Grok (xAI) — Druga opinia
-[odpowiedź Grok]
+### Grok (xAI) — Analiza rynku i makro
+[odpowiedź Groka]
 
-### Claude vs Grok — Porównanie ocen
-| Aspekt | Claude | Grok |
-|--------|--------|------|
-| [kluczowy punkt 1] | [ocena Claude] | [ocena Grok] |
-| [kluczowy punkt 2] | [ocena Claude] | [ocena Grok] |
-| [kluczowy punkt 3] | [ocena Claude] | [ocena Grok] |
+### Kluczowe sygnały z analizy Groka
+| Aspekt | Ocena Groka | Moja ocena (Claude) |
+|--------|-------------|---------------------|
+| Ryzyko recesji | | |
+| Sentyment rynkowy | | |
+| Największe zagrożenie | | |
+| Sektory defensywne | | |
 
-### Moje wnioski po konsultacji
-- [gdzie modele się zgadzają — silny sygnał]
-- [gdzie się różnią — warto przemyśleć]
-- [co rekomenduje do dalszej analizy]
+### Co to oznacza dla Twojego portfela
+*(tu Claude komentuje wyniki Groka w kontekście portfela użytkownika)*
 
-7. Zaznacz: "Ani Claude, ani Grok nie są doradcami finansowymi. Decyzja zawsze należy do Ciebie."
+7. Zaznacz: "Grok i Claude dostarczają analizę danych — nie są doradcami finansowymi. Decyzja należy do Ciebie."
