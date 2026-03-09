@@ -15,8 +15,9 @@ Ostatnia aktualizacja: 2026-03-09
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 405.40 | -156.59 | -3.43% | EU |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 922.89 | +222.60 | +13.09% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 459.62 | +67.35 | +2.82% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 1.0483 | 145.16 | EUR | 649.37 | -7.17 | -1.09% | EU |
 
-**Łącznie Twoje IKE: 38 215.32 PLN | P&L: +1 413.40 PLN (+3.84%)**
+**Łącznie Twoje IKE: 38 864.69 PLN | P&L: +1 406.23 PLN (+3.75%)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
@@ -30,10 +31,10 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 44 876.88 PLN
-- Łączny P&L: +1 199.35 PLN (+2.75%)
+- Łączna wartość: 45 526.25 PLN
+- Łączny P&L: +1 192.18 PLN (+2.69%)
 - Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
-- Pozycji: 10
+- Pozycji: 11
 
 ## Alokacja sektorowa
 - BigTech / AI: 21.6% (AMZN + MSF.DE)
@@ -41,13 +42,13 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 - Polska / GPW: 38.8% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
 - Healthcare / GLP-1: 3.2% (NVO) — CEL: zwiększyć do 7%
 - ETF tematyczne: 9.9% (QUTM)
-- Core VWCE: 0.0% — CEL: 35%
+- Core VWCE: 1.4% — CEL: 35% (w budowie)
 
 ## Uwagi
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
 - DNP: do redukcji o 30-40%
-- VWCE: brak w portfelu — największa luka strukturalna
+- VWCE.DE: 1.43% (649 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
 ## Instrukcja
 Użyj `/kup` lub `/sprzedaj` aby dodać transakcje. Claude automatycznie zaktualizuje tę tabelę.
