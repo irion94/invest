@@ -1,24 +1,24 @@
 # Portfel Inwestycyjny
 
 Ostatnia aktualizacja: 2026-03-09
-Źródło: Analiza Portfela IKE Rodzinne 2026.docx
+Źródło: XTB app 12:22
 
 ## Twoje IKE (XTB)
 
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
-| ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 955.91 | -8.09 | -0.12% | GPW |
-| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 950.55 | +395.59 | +6.04% | US |
-| CCJ | Cameco | 14.2441 | 92.18 | USD | 5 828.74 | +929.86 | +18.98% | US |
-| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 661.96 | -60.20 | -1.05% | GPW |
-| DNP | Dino Polska | 80.4299 | 39.868 | PLN | 3 245.35 | +38.78 | +1.21% | GPW |
-| QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 405.40 | -156.59 | -3.43% | EU |
-| NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 922.89 | +222.60 | +13.09% | US |
-| NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 459.62 | +67.35 | +2.82% | EU |
-| VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.76 | -20.34 | -1.23% | EU |
+| ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 976.22 | +12.13 | +0.17% | GPW |
+| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 853.75 | +582.70 | +9.29% | US |
+| CCJ | Cameco | 14.2441 | 92.18 | USD | 5 755.65 | +959.58 | +20.01% | US |
+| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 686.78 | -36.65 | -0.64% | GPW |
+| DNP | Dino Polska | 80.4299 | 39.868 | PLN | 3 243.73 | +37.16 | +1.16% | GPW |
+| QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 372.92 | -180.33 | -3.96% | EU |
+| NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 898.87 | +252.93 | +15.37% | US |
+| NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 429.05 | +37.52 | +1.57% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.87 | -20.23 | -1.23% | EU |
 
-**Łącznie Twoje IKE: 38 880.44 PLN | P&L: +1 412.26 PLN (+3.77%)**
-Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
+**Łącznie Twoje IKE: 39 331.28 PLN | P&L: +1 644.81 PLN (+4.36%)**
+Wolne środki: ~487.44 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
 
@@ -31,24 +31,24 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 45 542.00 PLN
-- Łączny P&L: +1 198.21 PLN (+2.70%)
+- Łączna wartość: 45 992.84 PLN
+- Łączny P&L: +1 430.76 PLN (+3.21%)
 - Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
 - Pozycji: 11
 
 ## Alokacja sektorowa
-- BigTech / AI: 21.6% (AMZN + MSF.DE)
-- Energia jądrowa: 17.0% (CCJ + NXE)
-- Polska / GPW: 43.6% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
-- Healthcare / GLP-1: 3.2% (NVO) — CEL: zwiększyć do 7%
-- ETF tematyczne: 9.9% (QUTM)
-- Core VWCE: 1.4% — CEL: 35% (w budowie)
+- BigTech / AI: 21.5% (AMZN + MSF.DE)
+- Energia jądrowa: 16.6% (CCJ + NXE)
+- Polska / GPW: 41.4% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
+- Healthcare / GLP-1: 5.3% (NVO) — CEL: zwiększyć do 7%
+- ETF tematyczne: 9.5% (QUTM)
+- Core VWCE: 3.5% — CEL: 35% (w budowie)
 
 ## Uwagi
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
 - DNP: do redukcji o 30-40%
-- VWCE.DE: ~3.6% (1627 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
+- VWCE.DE: ~3.5% (1627 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
 ## Instrukcja
 Użyj `/kup` lub `/sprzedaj` aby dodać transakcje. Claude automatycznie zaktualizuje tę tabelę.
