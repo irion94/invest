@@ -11,12 +11,12 @@ Ostatnia aktualizacja: 2026-03-09
 | AMZN | Amazon | 8.7331 | 201.07 | USD | 6 813.02 | +541.97 | +8.64% | US |
 | CCJ | Cameco | 14.2441 | 92.18 | USD | 5 721.43 | +925.36 | +19.29% | US |
 | KRU | Kruk | 12.3868 | 462.06 | PLN | 5 694.22 | -29.21 | -0.51% | GPW |
-| DNP | Dino Polska | 125.4299 | 39.93 | PLN | 5 005.90 | -2.47 | -0.05% | GPW |
+| DNP | Dino Polska | 100.4299 | 39.902 | PLN | 4 007.30 | — | — | GPW |
 | QUTM | VanEck QUTM | 50.5788 | 20.98 | USD | 4 432.65 | -120.60 | -2.65% | US |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 887.58 | +241.64 | +14.68% | US |
-| NVO | Novo Nordisk | 10.3676 | 240.76 | DKK | 1 451.73 | +26.96 | +1.89% | EU |
+| NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 479.00 | — | — | EU |
 
-**Łącznie Twoje IKE: 38 015.11 PLN | P&L: +1 628.13 (+4.47%)**
+**Łącznie Twoje IKE: ~37 475 PLN | P&L: ~ (odśwież /portfel)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
