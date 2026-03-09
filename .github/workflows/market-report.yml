@@ -2,10 +2,10 @@ name: Raport Rynkowy
 
 on:
   schedule:
-    # 9:30 UTC (11:30 CET / 10:30 GMT) — otwarcie
-    - cron: '30 9 * * 1-5'
-    # 16:00 UTC (18:00 CET) — zamknięcie US pre-market / Europa
-    - cron: '0 16 * * 1-5'
+    # 8:30 UTC = 9:30 CET (10:30 CEST) — ~30 min po otwarciu sesji europejskiej
+    - cron: '30 8 * * 1-5'
+    # 15:00 UTC = 10:00 EST (11:00 EDT) — ~30-90 min po otwarciu sesji US (NYSE 9:30 ET)
+    - cron: '0 15 * * 1-5'
   workflow_dispatch:  # Możliwość ręcznego uruchomienia
 
 jobs:
@@ -18,8 +18,18 @@ jobs:
       - name: Ustaw uprawnienia skryptów
         run: chmod +x tools/market-report.sh tools/telegram-notify.sh
 
-      - name: Wyślij raport rynkowy
+      - name: Wyślij raport — Otwarcie Europa
+        if: github.event.schedule == '30 8 * * 1-5'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_SESSION: "Otwarcie Europa 🇪🇺"
+        run: bash tools/market-report.sh
+
+      - name: Wyślij raport — Otwarcie US
+        if: github.event.schedule == '0 15 * * 1-5' || github.event_name == 'workflow_dispatch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_SESSION: "Otwarcie US 🇺🇸"
         run: bash tools/market-report.sh

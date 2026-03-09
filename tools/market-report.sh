@@ -90,11 +90,7 @@ except:
 
 SESSION=$(date +%H:%M)
 DATE=$(date '+%Y-%m-%d')
-if [ "$SESSION" \< "12:00" ]; then
-  SESJA_LABEL="Otwarcie"
-else
-  SESJA_LABEL="Zamknięcie"
-fi
+SESJA_LABEL="${REPORT_SESSION:-Raport}"
 
 # --- Pobierz dane ---
 SP500=$(fetch_yahoo "^GSPC")
