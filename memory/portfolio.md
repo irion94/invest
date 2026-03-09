@@ -1,6 +1,6 @@
 # Portfel Inwestycyjny
 
-Ostatnia aktualizacja: 2026-03-08
+Ostatnia aktualizacja: 2026-03-09
 Źródło: Analiza Portfela IKE Rodzinne 2026.docx
 
 ## Twoje IKE (XTB)
@@ -23,16 +23,16 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
-| MSF.DE | Microsoft | 1.9076 | 350.32 | EUR | 2 878.43 | +8.94 | +0.31% | EU |
-| SNT | Synektik | 10.7729 | 293.48 | PLN | 3 012.10 | -149.57 | -4.73% | GPW |
+| MSF.DE | Microsoft | 2.0110 | 350.30 | EUR | 3 008.29 | +65.59 | +2.23% | EU |
+| SNT | Synektik | 13.2731 | 289.80 | PLN | 3 628.87 | -217.96 | -5.66% | GPW |
 
-**Łącznie IKE Żony: 5 890.99 PLN | P&L: -140.63 (-2.33%)**
-Wolne środki: 0.46 PLN | Pozostały limit IKE 2026: ~22 260 PLN
+**Łącznie IKE Żony: 6 637.16 PLN | P&L: -152.37 (-2.24%)**
+Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 44 406.60 PLN
-- Łączny P&L: +1 487.50 (+3.56%)
-- Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 760)
+- Łączna wartość: ~45 152.27 PLN
+- Łączny P&L: ~+1 475.76 (+3.38%)
+- Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
 - Pozycji: 10
 
 ## Alokacja sektorowa
