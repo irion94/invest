@@ -1,0 +1,23 @@
+name: Alerty Cenowe
+
+on:
+  schedule:
+    # Co godzinę w dni robocze, między 8:00 a 22:00 UTC
+    - cron: '0 8-22 * * 1-5'
+  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+
+jobs:
+  check-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozytorium
+        uses: actions/checkout@v4
+
+      - name: Ustaw uprawnienia skryptów
+        run: chmod +x tools/check-alerts.sh tools/telegram-notify.sh
+
+      - name: Sprawdź alerty cenowe
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: bash tools/check-alerts.sh

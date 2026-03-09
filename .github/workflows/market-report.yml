@@ -1,0 +1,25 @@
+name: Raport Rynkowy
+
+on:
+  schedule:
+    # 9:30 UTC (11:30 CET / 10:30 GMT) — otwarcie
+    - cron: '30 9 * * 1-5'
+    # 16:00 UTC (18:00 CET) — zamknięcie US pre-market / Europa
+    - cron: '0 16 * * 1-5'
+  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozytorium
+        uses: actions/checkout@v4
+
+      - name: Ustaw uprawnienia skryptów
+        run: chmod +x tools/market-report.sh tools/telegram-notify.sh
+
+      - name: Wyślij raport rynkowy
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: bash tools/market-report.sh
