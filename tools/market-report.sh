@@ -125,7 +125,7 @@ MSG="📊 *Raport Rynkowy — ${SESJA_LABEL}*
 📅 ${DATE} ${SESSION}
 
 *Indeksy*
-${E_SP} S\&P 500:  \`${SP500_P}\`  (${SP500_C}%)
+${E_SP} S&P 500:  \`${SP500_P}\`  (${SP500_C}%)
 ${E_NQ} NASDAQ:   \`${NASDAQ_P}\`  (${NASDAQ_C}%)
 ${E_WIG} WIG20:   \`${WIG20_P}\`  (${WIG20_C}%)
 
