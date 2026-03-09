@@ -15,9 +15,9 @@ Ostatnia aktualizacja: 2026-03-09
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 405.40 | -156.59 | -3.43% | EU |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 922.89 | +222.60 | +13.09% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 459.62 | +67.35 | +2.82% | EU |
-| VWCE.DE | Vanguard FTSE All-World | 1.3363 | 145.18 | EUR | 826.11 | -10.47 | -1.25% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.76 | -20.34 | -1.23% | EU |
 
-**Łącznie Twoje IKE: 38 079.79 PLN | P&L: +1 422.13 PLN (+3.88%)**
+**Łącznie Twoje IKE: 38 880.44 PLN | P&L: +1 412.26 PLN (+3.77%)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
@@ -31,8 +31,8 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 44 741.35 PLN
-- Łączny P&L: +1 208.08 PLN (+2.78%)
+- Łączna wartość: 45 542.00 PLN
+- Łączny P&L: +1 198.21 PLN (+2.70%)
 - Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
 - Pozycji: 11
 
@@ -48,7 +48,7 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
 - DNP: do redukcji o 30-40%
-- VWCE.DE: ~1.8% (826 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
+- VWCE.DE: ~3.6% (1627 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
 ## Instrukcja
 Użyj `/kup` lub `/sprzedaj` aby dodać transakcje. Claude automatycznie zaktualizuje tę tabelę.
