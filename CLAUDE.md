@@ -69,7 +69,8 @@ Przy analizie spółek i ETF zawsze podaj dostępne wskaźniki z datą źródła
 - Konfiguracja alertów w memory/alerts-config.md
 
 ## Multi-model
-- `/gemini-consult` — druga opinia, analiza sentymentu, alternatywna perspektywa
+- `/gemini-consult` — druga opinia od Google Gemini, analiza sentymentu, alternatywna perspektywa
+- `/grok-consult` — druga opinia od Grok (xAI), analiza portfela i strategii, porównanie z Claude
 
 ## Global Macro Risk Monitoring
 
