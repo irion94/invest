@@ -27,12 +27,15 @@ if [ -z "$MESSAGE" ]; then
   exit 1
 fi
 
-# Wyślij na Telegram (parse_mode=Markdown dla formatowania)
+# Wyślij na Telegram (JSON aby uniknąć problemów z & w treści)
 curl -s -X POST \
   "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-  -d chat_id="$TELEGRAM_CHAT_ID" \
-  -d text="$MESSAGE" \
-  -d parse_mode="Markdown" \
+  -H "Content-Type: application/json" \
+  --data-binary "$(python3 -c "
+import json, sys
+msg = sys.stdin.read()
+print(json.dumps({'chat_id': '$TELEGRAM_CHAT_ID', 'text': msg, 'parse_mode': 'Markdown'}))
+" <<< "$MESSAGE")" \
   2>/dev/null
 
 echo "Wysłano na Telegram."
