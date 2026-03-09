@@ -12,6 +12,7 @@
 | 2026-03-09 | KUP | VWCE.DE | +1.0483 (→1.0483) | 145.16 EUR | Wypełnienie luki strukturalnej — pierwsze zakupy core VWCE na IKE (cel alokacji: 35%) |
 | 2026-03-09 | KUP | VWCE.DE | +0.0211 (→1.0694) | 145.50 EUR | DCA zgodnie z planem — budowa pozycji core VWCE na IKE |
 | 2026-03-09 | KUP | VWCE.DE | +0.2669 (→1.3363) | 145.20 EUR | DCA zgodnie z planem — budowa pozycji core VWCE na IKE |
+| 2026-03-09 | KUP | ATD | 158 (→158) | 3.180 PLN | Atende buduje własne środowisko IT oraz drony — apetyt na krajowe tech z własnym produktem |
 
 | 2026-03-09 | DECYZJA | NVO | — | — | NIE dokupować NVO. Trzymać obecną pozycję (17.0933 szt.). Gdy firma poprawi wyniki i kurs wzrośnie — sprzedać całość i przenieść środki do VWCE. |
 

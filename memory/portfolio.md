@@ -16,9 +16,10 @@ Ostatnia aktualizacja: 2026-03-09
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 898.87 | +252.93 | +15.37% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 429.05 | +37.52 | +1.57% | EU |
 | VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.87 | -20.23 | -1.23% | EU |
+| ATD | Atende | 158 | 3.180 | PLN | 485.06 | -17.38 | -3.46% | GPW |
 
-**Łącznie Twoje IKE: 39 331.28 PLN | P&L: +1 644.81 PLN (+4.36%)**
-Wolne środki: 0.34 PLN | Pozostały limit IKE 2026: ~20 000 PLN
+**Łącznie Twoje IKE: 39 816.34 PLN | P&L: +1 627.43 PLN (+4.26%)**
+Wolne środki: 0.34 PLN | Pozostały limit IKE 2026: ~19 498 PLN
 
 ## IKE Żony
 
@@ -31,15 +32,15 @@ Wolne środki: 0.34 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 45 992.84 PLN
-- Łączny P&L: +1 430.76 PLN (+3.21%)
-- Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
-- Pozycji: 11
+- Łączna wartość: 46 477.90 PLN
+- Łączny P&L: +1 413.38 PLN (+3.14%)
+- Łączny limit IKE 2026: 41 258 PLN (Ty: ~19 498 | Żona: ~21 510)
+- Pozycji: 12
 
 ## Alokacja sektorowa
 - BigTech / AI: 21.5% (AMZN + MSF.DE)
 - Energia jądrowa: 16.6% (CCJ + NXE)
-- Polska / GPW: 41.4% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
+- Polska / GPW: 43.1% (ACP + KRU + DNP + SNT + ATD) — CEL: zmniejszyć do 20%
 - Healthcare / GLP-1: 5.3% (NVO) — CEL: zwiększyć do 7%
 - ETF tematyczne: 9.5% (QUTM)
 - Core VWCE: 3.5% — CEL: 35% (w budowie)
