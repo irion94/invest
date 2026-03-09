@@ -18,7 +18,7 @@ Ostatnia aktualizacja: 2026-03-09
 | VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.87 | -20.23 | -1.23% | EU |
 
 **Łącznie Twoje IKE: 39 331.28 PLN | P&L: +1 644.81 PLN (+4.36%)**
-Wolne środki: ~487.44 PLN | Pozostały limit IKE 2026: ~20 000 PLN
+Wolne środki: 0.34 PLN (DNP T+2 — środki dostępne we wtorek ~807 PLN) | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
 
