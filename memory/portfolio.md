@@ -11,13 +11,13 @@ Ostatnia aktualizacja: 2026-03-09
 | AMZN | Amazon | 8.7331 | 201.07 | USD | 6 950.55 | +395.59 | +6.04% | US |
 | CCJ | Cameco | 14.2441 | 92.18 | USD | 5 828.74 | +929.86 | +18.98% | US |
 | KRU | Kruk | 12.3868 | 462.06 | PLN | 5 661.96 | -60.20 | -1.05% | GPW |
-| DNP | Dino Polska | 100.4299 | 39.902 | PLN | 4 030.25 | +22.88 | +0.57% | GPW |
+| DNP | Dino Polska | 80.4299 | 39.868 | PLN | 3 245.35 | +38.78 | +1.21% | GPW |
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 405.40 | -156.59 | -3.43% | EU |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 922.89 | +222.60 | +13.09% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 459.62 | +67.35 | +2.82% | EU |
 | VWCE.DE | Vanguard FTSE All-World | 1.3363 | 145.18 | EUR | 826.11 | -10.47 | -1.25% | EU |
 
-**Łącznie Twoje IKE: 38 864.69 PLN | P&L: +1 406.23 PLN (+3.75%)**
+**Łącznie Twoje IKE: 38 079.79 PLN | P&L: +1 422.13 PLN (+3.88%)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
@@ -31,15 +31,15 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 45 526.25 PLN
-- Łączny P&L: +1 192.18 PLN (+2.69%)
+- Łączna wartość: 44 741.35 PLN
+- Łączny P&L: +1 208.08 PLN (+2.78%)
 - Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
 - Pozycji: 11
 
 ## Alokacja sektorowa
 - BigTech / AI: 21.6% (AMZN + MSF.DE)
 - Energia jądrowa: 17.0% (CCJ + NXE)
-- Polska / GPW: 38.8% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
+- Polska / GPW: 43.6% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
 - Healthcare / GLP-1: 3.2% (NVO) — CEL: zwiększyć do 7%
 - ETF tematyczne: 9.9% (QUTM)
 - Core VWCE: 1.4% — CEL: 35% (w budowie)
