@@ -2,11 +2,15 @@ name: Raport Rynkowy
 
 on:
   schedule:
-    # 8:30 UTC = 9:30 CET (10:30 CEST) — ~30 min po otwarciu sesji europejskiej
+    # 9:30 CET (zima, UTC+1) = 8:30 UTC
     - cron: '30 8 * * 1-5'
-    # 15:00 UTC = 10:00 EST (11:00 EDT) — ~30-90 min po otwarciu sesji US (NYSE 9:30 ET)
+    # 9:30 CEST (lato, UTC+2) = 7:30 UTC
+    - cron: '30 7 * * 1-5'
+    # 16:00 CET (zima, UTC+1) = 15:00 UTC
     - cron: '0 15 * * 1-5'
-  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+    # 16:00 CEST (lato, UTC+2) = 14:00 UTC
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:
 
 jobs:
   send-report:
@@ -18,18 +22,19 @@ jobs:
       - name: Ustaw uprawnienia skryptów
         run: chmod +x tools/market-report.sh tools/telegram-notify.sh
 
-      - name: Wyślij raport — Otwarcie Europa
-        if: github.event.schedule == '30 8 * * 1-5'
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          REPORT_SESSION: "Otwarcie Europa 🇪🇺"
-        run: bash tools/market-report.sh
+      - name: Ustal sesję (czas polski)
+        id: session
+        run: |
+          HOUR_PL=$(TZ=Europe/Warsaw date +%H)
+          if [ "$HOUR_PL" -lt 13 ]; then
+            echo "label=Poranek 🌅" >> $GITHUB_OUTPUT
+          else
+            echo "label=Popołudnie 🌆" >> $GITHUB_OUTPUT
+          fi
 
-      - name: Wyślij raport — Otwarcie US
-        if: github.event.schedule == '0 15 * * 1-5' || github.event_name == 'workflow_dispatch'
+      - name: Wyślij raport rynkowy
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          REPORT_SESSION: "Otwarcie US 🇺🇸"
+          REPORT_SESSION: ${{ steps.session.outputs.label }}
         run: bash tools/market-report.sh
