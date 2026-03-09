@@ -64,7 +64,7 @@ curl -s https://api.x.ai/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${GROK_API_KEY}" \
   -d "{
-    \"model\": \"grok-3-latest\",
+    \"model\": \"grok-3-mini\",
     \"messages\": [
       {
         \"role\": \"system\",
@@ -75,7 +75,7 @@ curl -s https://api.x.ai/v1/chat/completions \
         \"content\": $(echo "$PROMPT" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')
       }
     ],
-    \"max_tokens\": 1200,
+    \"max_tokens\": 800,
     \"temperature\": 0.2
   }" | python3 -c "import json,sys; data=json.load(sys.stdin); print(data['choices'][0]['message']['content'])"
 ```
