@@ -1,0 +1,25 @@
+name: Buy Zone Monitor
+
+on:
+  schedule:
+    # 8:00 CET (zima, UTC+1) = 7:00 UTC
+    - cron: '0 7 * * 1-5'
+    # 8:00 CEST (lato, UTC+2) = 6:00 UTC
+    - cron: '0 6 * * 1-5'
+  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+
+jobs:
+  buy-zone-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozytorium
+        uses: actions/checkout@v4
+
+      - name: Ustaw uprawnienia skryptów
+        run: chmod +x tools/buy-zone-monitor.sh tools/telegram-notify.sh
+
+      - name: Sprawdź strefy kupna
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: bash tools/buy-zone-monitor.sh

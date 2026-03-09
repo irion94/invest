@@ -1,0 +1,25 @@
+name: Tygodniowy Raport Portfela
+
+on:
+  schedule:
+    # Piątek 17:00 CET (zima, UTC+1) = 16:00 UTC
+    - cron: '0 16 * * 5'
+    # Piątek 17:00 CEST (lato, UTC+2) = 15:00 UTC
+    - cron: '0 15 * * 5'
+  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+
+jobs:
+  weekly-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozytorium
+        uses: actions/checkout@v4
+
+      - name: Ustaw uprawnienia skryptów
+        run: chmod +x tools/weekly-report.sh tools/telegram-notify.sh
+
+      - name: Wyślij tygodniowy raport
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: bash tools/weekly-report.sh
