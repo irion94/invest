@@ -7,31 +7,31 @@ Ostatnia aktualizacja: 2026-03-09
 
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
-| ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 7 008.58 | +44.48 | +0.64% | GPW |
-| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 813.02 | +541.97 | +8.64% | US |
-| CCJ | Cameco | 14.2441 | 92.18 | USD | 5 721.43 | +925.36 | +19.29% | US |
-| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 694.22 | -29.21 | -0.51% | GPW |
-| DNP | Dino Polska | 100.4299 | 39.902 | PLN | 4 007.30 | — | — | GPW |
-| QUTM | VanEck QUTM | 50.5788 | 20.98 | USD | 4 432.65 | -120.60 | -2.65% | US |
-| NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 887.58 | +241.64 | +14.68% | US |
-| NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 479.00 | — | — | EU |
+| ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 955.91 | -8.09 | -0.12% | GPW |
+| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 950.55 | +395.59 | +6.04% | US |
+| CCJ | Cameco | 14.2441 | 92.18 | USD | 5 828.74 | +929.86 | +18.98% | US |
+| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 661.96 | -60.20 | -1.05% | GPW |
+| DNP | Dino Polska | 100.4299 | 39.902 | PLN | 4 030.25 | +22.88 | +0.57% | GPW |
+| QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 405.40 | -156.59 | -3.43% | EU |
+| NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 922.89 | +222.60 | +13.09% | US |
+| NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 459.62 | +67.35 | +2.82% | EU |
 
-**Łącznie Twoje IKE: ~37 475 PLN | P&L: ~ (odśwież /portfel)**
+**Łącznie Twoje IKE: 38 215.32 PLN | P&L: +1 413.40 PLN (+3.84%)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
 
 ## IKE Żony
 
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
-| MSF.DE | Microsoft | 2.0110 | 350.30 | EUR | 3 008.29 | +65.59 | +2.23% | EU |
-| SNT | Synektik | 13.2731 | 289.80 | PLN | 3 628.87 | -217.96 | -5.66% | GPW |
+| MSF.DE | Microsoft | 2.0110 | 350.30 | EUR | 3 024.73 | -4.33 | -0.14% | EU |
+| SNT | Synektik | 13.2731 | 289.80 | PLN | 3 636.83 | -209.72 | -5.45% | GPW |
 
-**Łącznie IKE Żony: 6 637.16 PLN | P&L: -152.37 (-2.24%)**
+**Łącznie IKE Żony: 6 661.56 PLN | P&L: -214.05 PLN (-3.11%)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: ~45 152.27 PLN
-- Łączny P&L: ~+1 475.76 (+3.38%)
+- Łączna wartość: 44 876.88 PLN
+- Łączny P&L: +1 199.35 PLN (+2.75%)
 - Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 510)
 - Pozycji: 10
 
