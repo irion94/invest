@@ -15,7 +15,7 @@ Ostatnia aktualizacja: 2026-03-09
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 405.40 | -156.59 | -3.43% | EU |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 922.89 | +222.60 | +13.09% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 459.62 | +67.35 | +2.82% | EU |
-| VWCE.DE | Vanguard FTSE All-World | 1.0483 | 145.16 | EUR | 649.37 | -7.17 | -1.09% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 1.3363 | 145.18 | EUR | 826.11 | -10.47 | -1.25% | EU |
 
 **Łącznie Twoje IKE: 38 864.69 PLN | P&L: +1 406.23 PLN (+3.75%)**
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
@@ -48,7 +48,7 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
 - DNP: do redukcji o 30-40%
-- VWCE.DE: 1.43% (649 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
+- VWCE.DE: ~1.8% (826 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
 ## Instrukcja
 Użyj `/kup` lub `/sprzedaj` aby dodać transakcje. Claude automatycznie zaktualizuje tę tabelę.
