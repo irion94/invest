@@ -34,6 +34,7 @@
 | SNT | < | 265 | Buy Zone | active | 2026-03-08 |
 | SNT | ≤ | 230 | Strong Buy | active | 2026-03-08 |
 | SNT | ≥ | 350 | Sell Zone | active | 2026-03-08 |
+| ATD | ≥ | 3.50 | Sprzedaj → VWCE | active | 2026-03-09 |
 
 ## Status: active / triggered / disabled
 
