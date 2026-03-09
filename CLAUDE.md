@@ -17,6 +17,7 @@ Hej! Välkommen till din personliga investeringsassistent.
 - `/kup [ilość] [ticker] [cena]` — zarejestruj zakup instrumentu
 - `/sprzedaj [ilość] [ticker] [cena]` — zarejestruj sprzedaż
 - `/rynek` — co się dzieje na rynkach (indeksy, nagłówki, sentyment)
+- `/makro` — Global Macro Risk Monitor (ryzyko recesji, 5 kategorii wskaźników)
 - `/watchlist` — zarządzaj listą obserwowanych instrumentów
 - `/alert` — konfiguruj alerty cenowe na Telegram
 - `/strategia` — przegląd strategii inwestycyjnej
@@ -70,6 +71,31 @@ Przy analizie spółek i ETF zawsze podaj dostępne wskaźniki z datą źródła
 ## Multi-model
 - `/gemini-consult` — druga opinia, analiza sentymentu, alternatywna perspektywa
 
+## Global Macro Risk Monitoring
+
+Przy każdej analizie uwzględniaj `memory/macro-risk.md` — aktualny Recession Risk Score.
+
+### 5 kategorii wskaźników
+
+| Kategoria | Kluczowe wskaźniki | Próg alertu 🔴 |
+|-----------|-------------------|----------------|
+| **Rynek obligacji** | Yield Curve 10Y–2Y, Credit Spread HY, US 10Y Yield | Yield Curve < 0, HY Spread > 500bp |
+| **Aktywność gosp.** | Global Mfg PMI, Global Services PMI, LEI | PMI < 50, LEI 3+ miesiące spadku |
+| **Rynek pracy** | Bezrobocie USA, Nonfarm Payrolls | Bezrobocie > 5%, NFP < 0 |
+| **Rynki finansowe** | VIX, MSCI World, S&P 500 | VIX > 30, indeksy < -20% YTD |
+| **Polityka monetarna** | Stopy Fed, CPI YoY | CPI > 6%, stopy > 5.5% |
+
+### Recession Risk Score
+
+| Wynik (sygnały 🔴) | Poziom ryzyka |
+|--------------------|---------------|
+| 0–2 | 🟢 Niskie — ekspansja gospodarcza |
+| 3–5 | 🟡 Średnie — możliwe spowolnienie |
+| 6–8 | 🟠 Wysokie — prawdopodobna recesja |
+| 9+ | 🔴 Krytyczne — kryzys finansowy |
+
+Użyj `/makro` aby odświeżyć dane i zaktualizować score.
+
 ## Memory
 - memory/portfolio.md — aktualny portfel
 - memory/strategy.md — strategia i cele
@@ -77,3 +103,4 @@ Przy analizie spółek i ETF zawsze podaj dostępne wskaźniki z datą źródła
 - memory/decisions-log.md — historia decyzji
 - memory/alerts-config.md — konfiguracja alertów
 - memory/news-log.md — istotne newsy
+- memory/macro-risk.md — Global Macro Risk Score (recesja, spowolnienie, euforia)
