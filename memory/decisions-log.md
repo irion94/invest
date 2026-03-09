@@ -10,6 +10,8 @@
 | 2026-03-09 | KUP | NVO | +6.7257 (→17.0933) | 243.41 DKK | Zwiększenie Healthcare/GLP-1 — NVO w strefie buy, zgodnie ze strategią (cel: 7%) |
 | 2026-03-09 | KUP | VWCE.DE | +1.0483 (→1.0483) | 145.16 EUR | Wypełnienie luki strukturalnej — pierwsze zakupy core VWCE na IKE (cel alokacji: 35%) |
 
+| 2026-03-09 | DECYZJA | NVO | — | — | NIE dokupować NVO. Trzymać obecną pozycję (17.0933 szt.). Gdy firma poprawi wyniki i kurs wzrośnie — sprzedać całość i przenieść środki do VWCE. |
+
 ## Instrukcja
 Log jest uzupełniany automatycznie przy każdym użyciu `/kup` lub `/sprzedaj`.
 Claude zapyta o powód decyzji i zapisze go tutaj.
