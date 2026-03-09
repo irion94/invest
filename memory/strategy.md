@@ -68,6 +68,40 @@ Ostatnia aktualizacja: 2026-03-08
 - Global ETF (VWCE)
 - Polska GPW (selektywnie, redukcja ekspozycji)
 
+## Filozofia inwestycyjna
+
+Strategia opiera się na syntezie trzech szkół myślenia:
+
+### John C. Bogle — pasywny rdzeń
+- Cały rynek > selekcja spółek w długim terminie
+- Minimalizacja kosztów (TER/expense ratio) jako pewna przewaga
+- Czas w rynku > timing rynku
+- **Realizacja w portfelu:** VWCE (cel 35%) — fundament core-satellite
+
+### Benjamin Graham — dyscyplina cenowa
+- Mr. Market to emocjonalny sprzedawca — kupuj przy panice, sprzedawaj przy euforii
+- Margin of Safety: kupuj ze znaczącym dyskontem do wartości wewnętrznej
+- Twarde wskaźniki (P/E, P/BV, dług/equity) ważniejsze niż narracja
+- **Realizacja w portfelu:** Buy/Sell Zones dla każdej spółki (patrz tabela wyżej)
+
+### Warren Buffett — jakość biznesu
+- Wspaniały biznes po rozsądnej cenie > słaby biznes po taniej cenie
+- Moat ekonomiczny: trwała przewaga (marka, patenty, koszty przełączania, sieć)
+- Długi horyzont: "Ulubiony horyzont to wieczność" — nie sprzedawaj bez powodu
+- Circle of Competence: inwestuj tylko w biznesy, które rozumiesz
+- **Realizacja w portfelu:** AMZN (e-commerce/cloud moat), CCJ (oligopol uranu), NVO (patent GLP-1)
+
+---
+
+## Wskaźniki do śledzenia pozycji
+
+| Wskaźnik | Cel portfela |
+|----------|-------------|
+| CAGR portfela | ≥7% rocznie (scenariusz bazowy) |
+| Sharpe Ratio | >1.0 |
+| Beta portfela | 0.8–1.1 (bliski rynkowi, lekko defensywny) |
+| Max Drawdown | <40% (akceptowalna zmienność) |
+
 ## Instrukcja
 Powiedz Claude o zmianach w strategii — zostanie to zaktualizowane.
 Użyj `/strategia` aby przejrzeć czy Twoje działania są spójne ze strategią.
