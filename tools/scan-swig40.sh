@@ -1,6 +1,7 @@
 #!/bin/bash
 # scan-swig40.sh — Skaner okazji inwestycyjnych w sWIG40
-# Pobiera 12 miesięcy danych ze stooq i oblicza pozycję 52W dla każdej spółki
+# Źródło danych: Yahoo Finance (.WA suffix) — JSON, bez problemów z lokalizacją
+# 52W Low/High pobierane bezpośrednio z meta, YTD obliczane z historii rocznej
 #
 # Użycie:
 #   ./tools/scan-swig40.sh              — pełny skan, sortuj wg okazji
@@ -19,122 +20,97 @@ CACHE_DIR="$PROJECT_DIR/memory/.swig40-cache"
 TOP_N=0
 SINGLE_TICKER=""
 
-# Parsuj argumenty
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --top) TOP_N="$2"; shift 2 ;;
+    --top)    TOP_N="$2"; shift 2 ;;
     --ticker) SINGLE_TICKER="${2^^}"; shift 2 ;;
-    *) shift ;;
+    *)        shift ;;
   esac
 done
 
 mkdir -p "$CACHE_DIR"
 
-# Daty: dziś i rok temu
-DATE_TO=$(date '+%Y%m%d')
-DATE_FROM=$(date -d '12 months ago' '+%Y%m%d' 2>/dev/null || date -v-12m '+%Y%m%d')
-
-# Pobierz dane historyczne ze stooq (12 miesięcy)
-fetch_history() {
-  local ticker="${1,,}"  # stooq wymaga małych liter
-  local cache_file="$CACHE_DIR/${ticker}.csv"
+# Pobierz dane spółki z Yahoo Finance (.WA = GPW Warsaw)
+# Zwraca JSON z ceną, 52W low/high i historią roczną (YTD)
+fetch_and_analyze() {
+  local ticker="${1^^}"
+  local cache_file="$CACHE_DIR/${ticker}.json"
   local cache_age=0
 
-  # Cache: odśwież jeśli starszy niż 4 godziny
   if [ -f "$cache_file" ]; then
     cache_age=$(( $(date +%s) - $(date -r "$cache_file" +%s 2>/dev/null || echo 0) ))
   fi
 
   if [ ! -f "$cache_file" ] || [ "$cache_age" -gt 14400 ]; then
-    curl -s "https://stooq.pl/q/d/l/?s=${ticker}&d1=${DATE_FROM}&d2=${DATE_TO}&i=d" \
+    curl -s "https://query1.finance.yahoo.com/v8/finance/chart/${ticker}.WA?interval=1d&range=1y" \
       -H "User-Agent: Mozilla/5.0" \
-      > "$cache_file" 2>/dev/null || true
+      > "$cache_file" 2>/dev/null || echo '{}' > "$cache_file"
   fi
 
-  cat "$cache_file"
-}
-
-# Analizuj dane — zwraca jedną linię CSV z wynikami
-analyze_ticker() {
-  local ticker="$1"
-  local csv_data="$2"
-
-  python3 - "$ticker" <<PYEOF
-import sys, csv, io
+  python3 - "$ticker" "$cache_file" <<'PYEOF'
+import sys, json, datetime
 
 ticker = sys.argv[1]
-data = """$csv_data"""
+cache_file = sys.argv[2]
 
-rows = []
 try:
-    reader = csv.DictReader(io.StringIO(data))
-    for row in reader:
-        try:
-            # Stooq zwraca nagłówki po polsku: Data,Otwarcie,Najwyzszy,Najnizszy,Zamkniecie,Wolumen
-            rows.append({
-                'date': row.get('Date', row.get('Data', '')),
-                'close': float(row.get('Close', row.get('Zamkniecie', 0)) or 0),
-                'high':  float(row.get('High',  row.get('Najwyzszy',  0)) or 0),
-                'low':   float(row.get('Low',   row.get('Najnizszy',  0)) or 0),
-                'vol':   float(row.get('Volume', row.get('Wolumen',   0)) or 0),
-            })
-        except (ValueError, KeyError):
-            pass
-except Exception:
-    pass
+    with open(cache_file) as f:
+        data = json.load(f)
+    result = data['chart']['result'][0]
+    meta = result['meta']
 
-rows = [r for r in rows if r['close'] > 0]
+    price     = float(meta['regularMarketPrice'])
+    w52_low   = float(meta['fiftyTwoWeekLow'])
+    w52_high  = float(meta['fiftyTwoWeekHigh'])
+    avg_vol   = float(meta.get('averageDailyVolume3Month', 0) or 0)
 
-if len(rows) < 5:
+    # YTD: porównaj z pierwszą ceną w 2026 roku
+    closes     = result['indicators']['quote'][0].get('close', [])
+    timestamps = result.get('timestamp', [])
+    ytd_base   = None
+    for i, ts in enumerate(timestamps):
+        if closes[i] is None:
+            continue
+        dt = datetime.datetime.fromtimestamp(ts)
+        if dt.year >= 2026:
+            ytd_base = float(closes[i])
+            break
+    ytd = ((price - ytd_base) / ytd_base * 100) if ytd_base else 0.0
+
+    pct_from_low  = ((price - w52_low)  / w52_low  * 100) if w52_low  > 0 else 0
+    pct_from_high = ((price - w52_high) / w52_high * 100) if w52_high > 0 else 0
+
+    if pct_from_low <= 10:
+        signal = "STRONG_BUY"
+    elif pct_from_low <= 20:
+        signal = "BUY_ZONE"
+    elif pct_from_high >= -10:
+        signal = "SELL_ZONE"
+    elif ytd <= -15:
+        signal = "OVERSOLD"
+    else:
+        signal = "neutral"
+
+    vol_str = f"{avg_vol/1000:.0f}k" if avg_vol >= 1000 else f"{avg_vol:.0f}"
+    print(f"{ticker}|{price:.2f}|{w52_low:.2f}|{w52_high:.2f}|{pct_from_low:.1f}|{pct_from_high:.1f}|{ytd:.1f}|{vol_str}|{signal}")
+
+except Exception as e:
     print(f"{ticker}|BRAK DANYCH|0|0|0|0|0|0|?")
-    sys.exit(0)
-
-# Sortuj wg daty
-rows.sort(key=lambda r: r['date'])
-
-current = rows[-1]['close']
-w52_high = max(r['high'] for r in rows)
-w52_low  = min(r['low']  for r in rows if r['low'] > 0)
-avg_vol  = sum(r['vol'] for r in rows) / len(rows)
-
-# Procent od 52W low i high
-pct_from_low  = ((current - w52_low)  / w52_low  * 100) if w52_low  > 0 else 0
-pct_from_high = ((current - w52_high) / w52_high * 100) if w52_high > 0 else 0
-
-# YTD (od początku roku)
-year_start = next((r['close'] for r in rows if r['date'] >= '2026-01-01'), rows[0]['close'])
-ytd = ((current - year_start) / year_start * 100) if year_start > 0 else 0
-
-# Sygnał okazji
-if pct_from_low <= 10:
-    signal = "STRONG_BUY"
-elif pct_from_low <= 20:
-    signal = "BUY_ZONE"
-elif pct_from_high >= -10:
-    signal = "SELL_ZONE"
-elif ytd <= -15:
-    signal = "OVERSOLD"
-else:
-    signal = "neutral"
-
-print(f"{ticker}|{current:.2f}|{w52_low:.2f}|{w52_high:.2f}|{pct_from_low:.1f}|{pct_from_high:.1f}|{ytd:.1f}|{avg_vol/1000:.0f}k|{signal}")
 PYEOF
 }
 
-# Nagłówek tabeli
 print_header() {
   echo ""
   echo "╔══════════════════════════════════════════════════════════════════════════════╗"
-  echo "║           SKANER OKAZJI sWIG40 — $(date '+%Y-%m-%d %H:%M')                    ║"
+  printf "║  SKANER OKAZJI sWIG40 — %-51s║\n" "$(date '+%Y-%m-%d %H:%M')"
   echo "╚══════════════════════════════════════════════════════════════════════════════╝"
   echo ""
-  printf "%-6s %8s %8s %8s %9s %9s %7s %8s  %s\n" \
-    "Ticker" "Cena" "52W Low" "52W High" "%od Low" "%od High" "YTD%" "Vol avg" "Sygnał"
-  printf "%-6s %8s %8s %8s %9s %9s %7s %8s  %s\n" \
-    "------" "--------" "--------" "--------" "---------" "---------" "-------" "--------" "-------"
+  printf "%-6s %8s %8s %8s %9s %9s %7s %9s  %s\n" \
+    "Ticker" "Cena" "52W Low" "52W High" "%od Low" "%od High" "YTD%" "Vol 3M" "Sygnał"
+  printf "%-6s %8s %8s %8s %9s %9s %7s %9s  %s\n" \
+    "------" "--------" "--------" "--------" "---------" "---------" "-------" "---------" "-------"
 }
 
-# Formatuj wiersz wyniku
 format_row() {
   local line="$1"
   IFS='|' read -r ticker cena low high pct_low pct_high ytd vol signal <<< "$line"
@@ -145,39 +121,33 @@ format_row() {
     BUY_ZONE)   emoji="🟢" ;;
     SELL_ZONE)  emoji="🔴" ;;
     OVERSOLD)   emoji="⚠️ " ;;
-    neutral)    emoji="  " ;;
   esac
 
-  printf "%-6s %8s %8s %8s %+9s %+9s %+7s %8s  %s %s\n" \
+  printf "%-6s %8s %8s %8s %+9s %+9s %+7s %9s  %s %s\n" \
     "$ticker" "$cena" "$low" "$high" "${pct_low}%" "${pct_high}%" "${ytd}%" "$vol" "$emoji" "$signal"
 }
 
 # --- MAIN ---
 
 if [ ! -f "$COMPONENTS_FILE" ]; then
-  echo "BŁĄD: Brak pliku $COMPONENTS_FILE"
-  echo "Utwórz go z listą tickerów sWIG40 (jeden na linię)"
+  echo "BŁĄD: Brak pliku $COMPONENTS_FILE" >&2
   exit 1
 fi
 
 mapfile -t TICKERS < <(grep -v '^#' "$COMPONENTS_FILE" | grep -v '^$')
 
-if [ -n "$SINGLE_TICKER" ]; then
-  TICKERS=("$SINGLE_TICKER")
-fi
+[ -n "$SINGLE_TICKER" ] && TICKERS=("$SINGLE_TICKER")
 
-echo "Pobieranie danych dla ${#TICKERS[@]} spółek..." >&2
+echo "Pobieranie danych dla ${#TICKERS[@]} spółek (Yahoo Finance)..." >&2
 
 results=()
 for ticker in "${TICKERS[@]}"; do
-  csv=$(fetch_history "$ticker")
-  row=$(analyze_ticker "$ticker" "$csv")
+  row=$(fetch_and_analyze "$ticker")
   results+=("$row")
   printf "." >&2
 done
 echo "" >&2
 
-# Sortuj wg % od 52W low (najtańsze względem rocznego minimum = najlepsza okazja)
 sorted=()
 while IFS= read -r line; do
   sorted+=("$line")
@@ -195,5 +165,5 @@ done
 
 echo ""
 echo "Legenda: 🚨 STRONG_BUY (≤10% od 52W low)  🟢 BUY_ZONE (≤20%)  ⚠️  OVERSOLD (YTD ≤-15%)  🔴 SELL_ZONE (≥-10% od 52W high)"
-echo "Źródło: stooq.pl | Cache: 4h | Lista komponentów: memory/swig40-components.txt"
+echo "Źródło: Yahoo Finance (.WA) | Cache: 4h | Lista: memory/swig40-components.txt"
 echo ""
