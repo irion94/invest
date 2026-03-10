@@ -72,9 +72,33 @@ send_alert() {
   bash "$SCRIPT_DIR/telegram-notify.sh" "$message" 2>/dev/null
 }
 
+# Zresetuj alerty triggered z poprzednich dni → active
+# Status: triggered:YYYY-MM-DD — resetuje się automatycznie następnego dnia
+reset_stale_triggered() {
+  local today
+  today=$(date '+%Y-%m-%d')
+  python3 - <<PYEOF
+import re
+
+with open('$ALERTS_FILE', 'r') as f:
+    content = f.read()
+
+def maybe_reset(m):
+    if m.group(1) != '$today':
+        return '| active |'
+    return m.group(0)
+
+content = re.sub(r'\| triggered:(\d{4}-\d{2}-\d{2}) \|', maybe_reset, content)
+
+with open('$ALERTS_FILE', 'w') as f:
+    f.write(content)
+PYEOF
+}
+
 # Wczytaj aktywne alerty z pliku
 # Format tabeli: | TICKER | < lub > lub ≤ lub ≥ | PRÓG | STREFA | active | DATA |
 process_alerts() {
+  reset_stale_triggered
   local triggered_any=false
 
   while IFS='|' read -r _ ticker warunek prog strefa status _; do
@@ -129,8 +153,8 @@ $(date '+%Y-%m-%d %H:%M')"
       send_alert "$msg"
       triggered_any=true
 
-      # Zmień status na triggered w pliku (używamy strefa_raw ze spacjami)
-      sed -i.bak "s/| ${ticker} | ${warunek} | ${prog} | ${strefa_raw} | active /| ${ticker} | ${warunek} | ${prog} | ${strefa_raw} | triggered /" "$ALERTS_FILE" 2>/dev/null || true
+      # Zmień status na triggered:DATA (re-arm automatycznie następnego dnia)
+      sed -i.bak "s/| ${ticker} | ${warunek} | ${prog} | ${strefa_raw} | active /| ${ticker} | ${warunek} | ${prog} | ${strefa_raw} | triggered:$(date '+%Y-%m-%d') /" "$ALERTS_FILE" 2>/dev/null || true
     fi
 
   done < <(grep "^|" "$ALERTS_FILE")
