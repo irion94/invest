@@ -1,7 +1,7 @@
 # Portfel Inwestycyjny
 
-Ostatnia aktualizacja: 2026-03-09
-Źródło: XTB app 12:22
+Ostatnia aktualizacja: 2026-03-10
+Źródło: XTB app (aktualizacja ręczna)
 
 ## Twoje IKE (XTB)
 
@@ -10,16 +10,16 @@ Ostatnia aktualizacja: 2026-03-09
 | ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 976.22 | +12.13 | +0.17% | GPW |
 | AMZN | Amazon | 8.7331 | 201.07 | USD | 6 853.75 | +582.70 | +9.29% | US |
 | CCJ | Cameco | 14.2441 | 92.18 | USD | 5 755.65 | +959.58 | +20.01% | US |
-| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 686.78 | -36.65 | -0.64% | GPW |
+| KRU | Kruk | 10.7664 | 462.06 | PLN | 5 006.37 | +32.05 | +0.64% | GPW |
 | DNP | Dino Polska | 80.4299 | 39.868 | PLN | 3 243.73 | +37.16 | +1.16% | GPW |
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 372.92 | -180.33 | -3.96% | EU |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 898.87 | +252.93 | +15.37% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 429.05 | +37.52 | +1.57% | EU |
-| VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.87 | -20.23 | -1.23% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 3.7995 | 146.09 | EUR | 2 356.78 | -28.10 | -1.18% | EU |
 | ATD | Atende | 158 | 3.180 | PLN | 485.06 | -17.38 | -3.46% | GPW |
 
-**Łącznie Twoje IKE: 39 816.34 PLN | P&L: +1 627.43 PLN (+4.26%)**
-Wolne środki: 0.34 PLN | Pozostały limit IKE 2026: ~19 498 PLN
+**Łącznie Twoje IKE: 39 889.42 PLN | P&L: +1 688.26 PLN (+4.42%)**
+Wolne środki: ~23.92 PLN | Pozostały limit IKE 2026: ~19 498 PLN
 
 ## IKE Żony
 
@@ -32,18 +32,18 @@ Wolne środki: 0.34 PLN | Pozostały limit IKE 2026: ~19 498 PLN
 Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 46 477.90 PLN
-- Łączny P&L: +1 413.38 PLN (+3.14%)
+- Łączna wartość: 46 551.0 PLN
+- Łączny P&L: +1 474.21 PLN (+3.27%)
 - Łączny limit IKE 2026: 41 258 PLN (Ty: ~19 498 | Żona: ~21 510)
 - Pozycji: 12
 
 ## Alokacja sektorowa
 - BigTech / AI: 21.5% (AMZN + MSF.DE)
 - Energia jądrowa: 16.6% (CCJ + NXE)
-- Polska / GPW: 43.1% (ACP + KRU + DNP + SNT + ATD) — CEL: zmniejszyć do 20%
+- Polska / GPW: ~39.4% (ACP + KRU + DNP + SNT + ATD) — CEL: zmniejszyć do 20%
 - Healthcare / GLP-1: 5.3% (NVO) — CEL: zwiększyć do 7%
 - ETF tematyczne: 9.5% (QUTM)
-- Core VWCE: 3.5% — CEL: 35% (w budowie)
+- Core VWCE: ~5.9% — CEL: 35% (w budowie)
 
 ## Uwagi
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
