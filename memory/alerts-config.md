@@ -15,10 +15,14 @@
 | CCJ | ≥ | 175 | Sell Zone | active | 2026-03-08 |
 | KRU | < | 445 | Buy Zone | active | 2026-03-08 |
 | KRU | ≤ | 390 | Strong Buy | active | 2026-03-08 |
-| KRU | ≥ | 600 | Sell Zone | active | 2026-03-08 |
+| KRU | ≥ | 510 | Sell Strefa 1 — sprzedaj 3-4 szt. | active | 2026-03-10 |
+| KRU | ≥ | 560 | Sell Strefa 2 — sprzedaj 3-4 szt. | active | 2026-03-10 |
+| KRU | ≥ | 600 | Sell Strefa 3 — zamknij pozycję | active | 2026-03-08 |
 | DNP | < | 40 | Buy Zone | active | 2026-03-08 |
 | DNP | ≤ | 33 | Strong Buy | active | 2026-03-08 |
-| DNP | ≥ | 60 | Sell Zone | active | 2026-03-08 |
+| DNP | ≥ | 43 | Sell Strefa 1 — sprzedaj 20-25 szt. | active | 2026-03-10 |
+| DNP | ≥ | 50 | Sell Strefa 2 — sprzedaj 25-30 szt. | active | 2026-03-10 |
+| DNP | ≥ | 60 | Sell Strefa 3 — zamknij większość | active | 2026-03-08 |
 | QUTM | < | 21 | Buy Zone | active | 2026-03-08 |
 | QUTM | ≤ | 16 | Strong Buy | active | 2026-03-08 |
 | QUTM | ≥ | 40 | Sell Zone | active | 2026-03-08 |
