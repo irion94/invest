@@ -2,3 +2,4 @@
 .claude/scheduled-tasks/
 *.log
 node_modules/
+memory/.swig40-cache/
