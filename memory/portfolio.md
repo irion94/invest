@@ -10,12 +10,12 @@ Ostatnia aktualizacja: 2026-03-10
 | ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 976.22 | +12.13 | +0.17% | GPW |
 | AMZN | Amazon | 8.7331 | 201.07 | USD | 6 853.75 | +582.70 | +9.29% | US |
 | CCJ | Cameco | 14.2441 | 92.18 | USD | 5 755.65 | +959.58 | +20.01% | US |
-| KRU | Kruk | 10.7664 | 462.06 | PLN | 5 006.37 | +32.05 | +0.64% | GPW |
+| KRU | Kruk | 10.7664 | 462.02 | PLN | 5 006.37 | +32.05 | +0.64% | GPW |
 | DNP | Dino Polska | 80.4299 | 39.868 | PLN | 3 243.73 | +37.16 | +1.16% | GPW |
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 372.92 | -180.33 | -3.96% | EU |
 | NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 898.87 | +252.93 | +15.37% | US |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 429.05 | +37.52 | +1.57% | EU |
-| VWCE.DE | Vanguard FTSE All-World | 3.7995 | 146.09 | EUR | 2 356.78 | -28.10 | -1.18% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 3.7995 | 146.11 | EUR | 2 356.78 | -28.10 | -1.18% | EU |
 | ATD | Atende | 158 | 3.180 | PLN | 485.06 | -17.38 | -3.46% | GPW |
 
 **Łącznie Twoje IKE: 39 889.42 PLN | P&L: +1 688.26 PLN (+4.42%)**
@@ -49,7 +49,7 @@ Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
 - DNP: do redukcji o 30-40%
-- VWCE.DE: ~3.5% (1627 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
+- VWCE.DE: ~5.9% (2357 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
 ## Instrukcja
 Użyj `/kup` lub `/sprzedaj` aby dodać transakcje. Claude automatycznie zaktualizuje tę tabelę.
