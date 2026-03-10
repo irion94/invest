@@ -8,7 +8,7 @@ Ostatnia aktualizacja: 2026-03-10
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
 | ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 976.22 | +12.13 | +0.17% | GPW |
-| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 853.75 | +582.70 | +9.29% | US |
+| AMZN | Amazon | 8.9882 | 201.46 | USD | 6 853.75 | +582.70 | +9.29% | US |
 | CCJ | Cameco | 14.2441 | 92.18 | USD | 6 098.85 | +1 302.78 | +27.16% | US |
 | KRU | Kruk | 10.7664 | 462.02 | PLN | 5 006.37 | +32.05 | +0.64% | GPW |
 | QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 485.60 | -67.65 | -1.49% | EU |
