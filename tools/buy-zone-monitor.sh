@@ -102,30 +102,30 @@ for TICKER in "${!BUY_MAX[@]}"; do
   IN_BUY=$(python3 -c "print('yes' if float('$SB') < float('$PRICE') <= float('$BUY') else 'no')" 2>/dev/null)
 
   if [ "$IN_SB" = "yes" ]; then
-    ALERTS_STRONG="${ALERTS_STRONG}🚨 *${TICKER}* — ${PRICE} ${CUR} (Strong Buy ≤${SB})\n"
+    ALERTS_STRONG="${ALERTS_STRONG}🚨 *${TICKER}* — ${PRICE} ${CUR} (Strong Buy ≤${SB})"$'\n'
   elif [ "$IN_BUY" = "yes" ]; then
-    ALERTS_BUY="${ALERTS_BUY}🟢 *${TICKER}* — ${PRICE} ${CUR} (Buy Zone ≤${BUY})\n"
+    ALERTS_BUY="${ALERTS_BUY}🟢 *${TICKER}* — ${PRICE} ${CUR} (Buy Zone ≤${BUY})"$'\n'
   fi
 done
 
 # Zbuduj wiadomość
 DATE=$(date '+%Y-%m-%d %H:%M')
-MSG="📊 *Buy Zone Monitor* — ${DATE}\n\n"
+MSG=$'📊 *Buy Zone Monitor* — '"${DATE}"$'\n\n'
 
 if [ -n "$ALERTS_STRONG" ]; then
-  MSG="${MSG}🚨 *STRONG BUY — działaj!*\n${ALERTS_STRONG}\n"
+  MSG="${MSG}"$'🚨 *STRONG BUY — działaj!*\n'"${ALERTS_STRONG}"$'\n'
 fi
 
 if [ -n "$ALERTS_BUY" ]; then
-  MSG="${MSG}🟢 *Buy Zone — obserwuj*\n${ALERTS_BUY}\n"
+  MSG="${MSG}"$'🟢 *Buy Zone — obserwuj*\n'"${ALERTS_BUY}"$'\n'
 fi
 
 if [ -z "$ALERTS_STRONG" ] && [ -z "$ALERTS_BUY" ]; then
-  MSG="${MSG}✅ Żadna spółka nie jest w strefie kupna.\nSprawdź ponownie jutro."
+  MSG="${MSG}"$'✅ Żadna spółka nie jest w strefie kupna.\nSprawdź ponownie jutro.'
 fi
 
 if [ -n "$SKIPPED" ]; then
-  MSG="${MSG}\n_Brak danych:${SKIPPED}_"
+  MSG="${MSG}"$'\n_Brak danych:'"${SKIPPED}"$'_'
 fi
 
 send_telegram "$MSG"
