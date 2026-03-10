@@ -1,6 +1,6 @@
 # Strategia Inwestycyjna
 
-Ostatnia aktualizacja: 2026-03-08
+Ostatnia aktualizacja: 2026-03-10
 
 ## Cele
 - Wolność finansowa do 2046 (horyzont 20 lat)
@@ -52,14 +52,15 @@ Ostatnia aktualizacja: 2026-03-08
 | SNT | PLN | 250-265 | ≤230 | ≥350 |
 
 ## Top 3 priorytety 2026
-1. **KRYTYCZNY** — Kup VWCE na oba konta IKE (cel: 35% portfela, ~15 500 PLN)
-2. **PILNY** — Dokup NVO agresywnie (w strefie Strong Buy, 5-8 akcji w Q1/Q2)
-3. **WAŻNY** — Redukuj DNP o 30-40%, uwolniony kapitał → VWCE
+1. **KRYTYCZNY** — Buduj VWCE.DE (Twoje IKE) — każda nowa wpłata idzie w VWCE, cel: 35% portfela
+2. **WAŻNY** — IKE Żony: rozważ zwiększenie MSF.DE (w strefie buy ~340-360 EUR)
+3. **KONTYNUUJ** — DCA CCJ+NXE przy korektach uranu (teza: x2 popytu do 2040, licencja Rook I zatwierdzona)
 
 ## Plan wpłat IKE 2026
-- Marzec: 4000+4000 PLN (VWCE + NVO + MSFT)
+- **Twoje IKE** → VWCE.DE (każda wpłata)
+- **IKE Żony** → MSF.DE (zwiększanie pozycji w strefie buy)
 - Kwiecień-Grudzień: regularne wpłaty wg planu
-- Łączny limit: ~42 260 PLN (Ty: ~20k + Żona: ~22k)
+- Łączny limit: ~41 258 PLN (Ty: ~19 498 | Żona: ~21 510)
 
 ## Preferowane sektory/rynki
 - BigTech / AI (US)
