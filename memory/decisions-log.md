@@ -17,8 +17,8 @@
 | 2026-03-09 | DECYZJA | NVO | — | — | NIE dokupować NVO. Trzymać obecną pozycję (17.0933 szt.). Gdy firma poprawi wyniki i kurs wzrośnie — sprzedać całość i przenieść środki do VWCE. |
 | 2026-03-10 | SPRZEDAJ | KRU | -1.6204 (→10.7664) | 465.00 PLN | Redukcja ekspozycji GPW (43%→~39%), środki reinwestowane w core VWCE |
 | 2026-03-10 | KUP | VWCE.DE | +1.1651 (→3.7995) | 148.26 EUR | Budowanie core portfela — DCA VWCE na IKE (cel alokacji: 35%) |
-| 2026-03-10 | SPRZEDAJ | DNP | -8.3973 (→72.0326) | ~41.66 PLN | Dalsza redukcja GPW zgodnie ze strategią (cel: GPW <20%) — środki reinwestowane w NXE |
-| 2026-03-10 | KUP | NXE | +7.5990 (→50.2193) | ~12.84 USD | Zwiększenie ekspozycji na energię jądrową (CCJ+NXE → 20.8%) — reinwestycja z Dino |
+| 2026-03-10 | SPRZEDAJ | DNP | -8.3973 (→72.0326) | ~41.66 PLN | Redukcja GPW zgodnie ze strategią — rotacja kapitału z polskiego retail do globalnej energii jądrowej |
+| 2026-03-10 | KUP | NXE | +7.5990 (→50.2193) | ~12.84 USD | Pozytywne informacje o spółce + teza: zapotrzebowanie na uran może się podwoić do 2040 (nowe reaktory SMR, dekarbonizacja). NexGen (projekt Rook I, Kanada) — jeden z największych nieodkrytych złóż uranu na świecie. Razem z CCJ ekspozycja na uran wynosi ~20.8% portfela. |
 
 ## Instrukcja
 Log jest uzupełniany automatycznie przy każdym użyciu `/kup` lub `/sprzedaj`.
