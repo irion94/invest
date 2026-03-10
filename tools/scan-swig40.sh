@@ -70,12 +70,13 @@ try:
     reader = csv.DictReader(io.StringIO(data))
     for row in reader:
         try:
+            # Stooq zwraca nagłówki po polsku: Data,Otwarcie,Najwyzszy,Najnizszy,Zamkniecie,Wolumen
             rows.append({
-                'date': row.get('Date',''),
-                'close': float(row.get('Close', 0) or 0),
-                'high':  float(row.get('High', 0) or 0),
-                'low':   float(row.get('Low', 0) or 0),
-                'vol':   float(row.get('Volume', 0) or 0),
+                'date': row.get('Date', row.get('Data', '')),
+                'close': float(row.get('Close', row.get('Zamkniecie', 0)) or 0),
+                'high':  float(row.get('High',  row.get('Najwyzszy',  0)) or 0),
+                'low':   float(row.get('Low',   row.get('Najnizszy',  0)) or 0),
+                'vol':   float(row.get('Volume', row.get('Wolumen',   0)) or 0),
             })
         except (ValueError, KeyError):
             pass
@@ -177,8 +178,10 @@ done
 echo "" >&2
 
 # Sortuj wg % od 52W low (najtańsze względem rocznego minimum = najlepsza okazja)
-IFS=$'\n' sorted=($(printf "%s\n" "${results[@]}" | sort -t'|' -k5 -n))
-unset IFS
+sorted=()
+while IFS= read -r line; do
+  sorted+=("$line")
+done < <(printf "%s\n" "${results[@]}" | sort -t'|' -k5 -n)
 
 print_header
 
@@ -186,7 +189,7 @@ count=0
 for row in "${sorted[@]}"; do
   [[ "$row" == *"BRAK DANYCH"* ]] && continue
   format_row "$row"
-  (( count++ ))
+  count=$(( count + 1 ))
   [ "$TOP_N" -gt 0 ] && [ "$count" -ge "$TOP_N" ] && break
 done
 

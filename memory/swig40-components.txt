@@ -1,5 +1,9 @@
+# sWIG40 + małe spółki GPW — lista do skanera okazji
+# Aktualizuj kwartalnie: marzec, czerwiec, wrzesień, grudzień
+# Weryfikacja: stooq.pl (tylko tickery z aktywnymi danymi historycznymi)
+# Ostatnia weryfikacja: 2026-03-10
+
 ACG
-AML
 AMB
 APR
 ASM
@@ -10,23 +14,17 @@ BHW
 CAR
 CIG
 CLE
-CMR
 DOM
 ELT
 ERG
 EUR
-FMF
-GNB
 GPW
 GTC
 INK
 IPE
-IRL
 KGN
 KRU
 LPP
-LST
-MCK
 MIL
 MNC
 MOL
@@ -34,8 +32,6 @@ MRB
 NWG
 PGE
 PKP
-PLY
-QMK
 RBW
 SGN
 SNG
@@ -43,7 +39,6 @@ SNT
 SOK
 STF
 TEN
-TGH
 TOA
 VRC
 WTN
