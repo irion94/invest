@@ -15,6 +15,7 @@
 | 2026-03-09 | KUP | ATD | 158 (→158) | 3.180 PLN | Atende buduje własne środowisko IT oraz drony — apetyt na krajowe tech z własnym produktem |
 
 | 2026-03-09 | DECYZJA | NVO | — | — | NIE dokupować NVO. Trzymać obecną pozycję (17.0933 szt.). Gdy firma poprawi wyniki i kurs wzrośnie — sprzedać całość i przenieść środki do VWCE. |
+| 2026-03-10 | DECYZJA | CCJ+NXE | — | — | STRATEGIA URANU: przy mocnym spadku ceny spot uranu lub kursu akcji — kontynuować zakupy (DCA). Teza długoterminowa: podwojenie zapotrzebowania na uran do 2040. Korekty traktować jako okazję, nie sygnał wyjścia. |
 | 2026-03-10 | SPRZEDAJ | KRU | -1.6204 (→10.7664) | 465.00 PLN | Redukcja ekspozycji GPW (43%→~39%), środki reinwestowane w core VWCE |
 | 2026-03-10 | KUP | VWCE.DE | +1.1651 (→3.7995) | 148.26 EUR | Budowanie core portfela — DCA VWCE na IKE (cel alokacji: 35%) |
 | 2026-03-10 | SPRZEDAJ | DNP | -8.3973 (→72.0326) | ~41.66 PLN | Redukcja GPW zgodnie ze strategią — rotacja kapitału z polskiego retail do globalnej energii jądrowej |
