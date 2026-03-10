@@ -1,53 +1,55 @@
 # Portfel Inwestycyjny
 
-Ostatnia aktualizacja: 2026-03-08
-Źródło: Analiza Portfela IKE Rodzinne 2026.docx
+Ostatnia aktualizacja: 2026-03-09
+Źródło: XTB app 12:22
 
 ## Twoje IKE (XTB)
 
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
-| ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 7 008.58 | +44.48 | +0.64% | GPW |
-| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 813.02 | +541.97 | +8.64% | US |
-| CCJ | Cameco | 14.2441 | 92.18 | USD | 5 721.43 | +925.36 | +19.29% | US |
-| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 694.22 | -29.21 | -0.51% | GPW |
-| DNP | Dino Polska | 125.4299 | 39.93 | PLN | 5 005.90 | -2.47 | -0.05% | GPW |
-| QUTM | VanEck QUTM | 50.5788 | 20.98 | USD | 4 432.65 | -120.60 | -2.65% | US |
-| NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 887.58 | +241.64 | +14.68% | US |
-| NVO | Novo Nordisk | 10.3676 | 240.76 | DKK | 1 451.73 | +26.96 | +1.89% | EU |
+| ACP | Asseco Poland | 40.4419 | 172.20 | PLN | 6 976.22 | +12.13 | +0.17% | GPW |
+| AMZN | Amazon | 8.7331 | 201.07 | USD | 6 853.75 | +582.70 | +9.29% | US |
+| CCJ | Cameco | 14.2441 | 92.18 | USD | 5 755.65 | +959.58 | +20.01% | US |
+| KRU | Kruk | 12.3868 | 462.06 | PLN | 5 686.78 | -36.65 | -0.64% | GPW |
+| DNP | Dino Polska | 80.4299 | 39.868 | PLN | 3 243.73 | +37.16 | +1.16% | GPW |
+| QUTM.DE | VanEck QUTM | 50.5788 | 20.98 | EUR | 4 372.92 | -180.33 | -3.96% | EU |
+| NXE | NexGen Energy | 42.6203 | 10.69 | USD | 1 898.87 | +252.93 | +15.37% | US |
+| NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 429.05 | +37.52 | +1.57% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 2.6344 | 145.16 | EUR | 1 626.87 | -20.23 | -1.23% | EU |
+| ATD | Atende | 158 | 3.180 | PLN | 485.06 | -17.38 | -3.46% | GPW |
 
-**Łącznie Twoje IKE: 38 015.11 PLN | P&L: +1 628.13 (+4.47%)**
-Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~20 000 PLN
+**Łącznie Twoje IKE: 39 816.34 PLN | P&L: +1 627.43 PLN (+4.26%)**
+Wolne środki: 0.34 PLN | Pozostały limit IKE 2026: ~19 498 PLN
 
 ## IKE Żony
 
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
-| MSF.DE | Microsoft | 1.9076 | 350.32 | EUR | 2 878.43 | +8.94 | +0.31% | EU |
-| SNT | Synektik | 10.7729 | 293.48 | PLN | 3 012.10 | -149.57 | -4.73% | GPW |
+| MSF.DE | Microsoft | 2.0110 | 350.30 | EUR | 3 024.73 | -4.33 | -0.14% | EU |
+| SNT | Synektik | 13.2731 | 289.80 | PLN | 3 636.83 | -209.72 | -5.45% | GPW |
 
-**Łącznie IKE Żony: 5 890.99 PLN | P&L: -140.63 (-2.33%)**
-Wolne środki: 0.46 PLN | Pozostały limit IKE 2026: ~22 260 PLN
+**Łącznie IKE Żony: 6 661.56 PLN | P&L: -214.05 PLN (-3.11%)**
+Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: 44 406.60 PLN
-- Łączny P&L: +1 487.50 (+3.56%)
-- Łączny limit IKE 2026: 41 760 PLN (Ty: ~20 000 | Żona: ~21 760)
-- Pozycji: 10
+- Łączna wartość: 46 477.90 PLN
+- Łączny P&L: +1 413.38 PLN (+3.14%)
+- Łączny limit IKE 2026: 41 258 PLN (Ty: ~19 498 | Żona: ~21 510)
+- Pozycji: 12
 
 ## Alokacja sektorowa
-- BigTech / AI: 21.6% (AMZN + MSF.DE)
-- Energia jądrowa: 17.0% (CCJ + NXE)
-- Polska / GPW: 38.8% (ACP + KRU + DNP + SNT) — CEL: zmniejszyć do 20%
-- Healthcare / GLP-1: 3.2% (NVO) — CEL: zwiększyć do 7%
-- ETF tematyczne: 9.9% (QUTM)
-- Core VWCE: 0.0% — CEL: 35%
+- BigTech / AI: 21.5% (AMZN + MSF.DE)
+- Energia jądrowa: 16.6% (CCJ + NXE)
+- Polska / GPW: 43.1% (ACP + KRU + DNP + SNT + ATD) — CEL: zmniejszyć do 20%
+- Healthcare / GLP-1: 5.3% (NVO) — CEL: zwiększyć do 7%
+- ETF tematyczne: 9.5% (QUTM)
+- Core VWCE: 3.5% — CEL: 35% (w budowie)
 
 ## Uwagi
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
 - DNP: do redukcji o 30-40%
-- VWCE: brak w portfelu — największa luka strukturalna
+- VWCE.DE: ~3.5% (1627 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
 ## Instrukcja
 Użyj `/kup` lub `/sprzedaj` aby dodać transakcje. Claude automatycznie zaktualizuje tę tabelę.

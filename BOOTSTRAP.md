@@ -40,18 +40,7 @@ Otwórz plik `.env` w dowolnym edytorze i uzupełnij:
 - `TELEGRAM_BOT_TOKEN=` — wklej token z BotFather
 - `TELEGRAM_CHAT_ID=` — wklej Chat ID
 
-## Krok 5: Zainstaluj pluginy Claude Code
-
-Wklej te komendy w terminal, jedna po drugiej:
-
-```bash
-claude plugin marketplace add obra/superpowers-marketplace
-claude plugin marketplace add anthropics/financial-services-plugins
-claude plugin install superpowers@superpowers-marketplace
-claude plugin install financial-analysis@financial-services-plugins
-```
-
-## Krok 6: Uruchom!
+## Krok 5: Uruchom!
 
 ```bash
 claude
@@ -78,16 +67,13 @@ Claude przywita Cię jako asystent inwestycyjny. Możesz od razu zacząć:
 | `/strategia` | Przegląd strategii |
 | `/gemini-consult` | Druga opinia od Gemini AI |
 
-### Automatyczne raporty (po skonfigurowaniu Telegrama)
-- Poniedziałek-piątek 8:00 — poranny przegląd rynku
-- Poniedziałek-piątek 9:00/13:00/17:00 — monitoring newsów
-- Poniedziałek-piątek 18:00 — dzienny raport portfela
-- Sobota 10:00 — tygodniowe podsumowanie
-- Co 30 minut — sprawdzanie alertów cenowych
+### Automatyczne alerty cenowe (po skonfigurowaniu Telegrama i crontab)
+- Poniedziałek-piątek 10:00 i 16:00 — sprawdzanie alertów cenowych
+- Powiadomienie na Telegram gdy cena przekroczy ustawiony próg
 
 ## Problemy?
 
-- **"Claude nie zna moich komend"** — upewnij się że uruchomiłeś `claude` z katalogu `invest-plan/`
+- **"Claude nie zna moich komend"** — upewnij się że uruchomiłeś `claude` z katalogu `invest/`
 - **"Telegram nie działa"** — sprawdź czy `.env` ma poprawny token i chat ID
 - **"Brak danych cenowych"** — sprawdź połączenie z internetem; darmowe API mają limity zapytań
 - **Chcesz więcej pomocy?** — po prostu napisz Claude po polsku czego potrzebujesz

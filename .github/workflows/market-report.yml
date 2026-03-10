@@ -1,0 +1,40 @@
+name: Raport Rynkowy
+
+on:
+  schedule:
+    # 9:30 CET (zima, UTC+1) = 8:30 UTC
+    - cron: '30 8 * * 1-5'
+    # 9:30 CEST (lato, UTC+2) = 7:30 UTC
+    - cron: '30 7 * * 1-5'
+    # 16:00 CET (zima, UTC+1) = 15:00 UTC
+    - cron: '0 15 * * 1-5'
+    # 16:00 CEST (lato, UTC+2) = 14:00 UTC
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozytorium
+        uses: actions/checkout@v4
+
+      - name: Ustaw uprawnienia skryptów
+        run: chmod +x tools/market-report.sh tools/telegram-notify.sh
+
+      - name: Ustal sesję (czas polski)
+        id: session
+        run: |
+          HOUR_PL=$(TZ=Europe/Warsaw date +%H)
+          if [ "$HOUR_PL" -lt 13 ]; then
+            echo "label=Poranek 🌅" >> $GITHUB_OUTPUT
+          else
+            echo "label=Popołudnie 🌆" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Wyślij raport rynkowy
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_SESSION: ${{ steps.session.outputs.label }}
+        run: bash tools/market-report.sh
