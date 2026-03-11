@@ -1,6 +1,6 @@
 # Portfel Inwestycyjny
 
-Ostatnia aktualizacja: 2026-03-10
+Ostatnia aktualizacja: 2026-03-11
 Źródło: XTB app (aktualizacja ręczna)
 
 ## Twoje IKE (XTB)
@@ -26,10 +26,10 @@ Wolne środki: ~78 PLN | Pozostały limit IKE 2026: ~19 498 PLN
 | Ticker | Nazwa | Ilość | Śr. cena zakupu | Waluta | Wartość PLN | P&L PLN | P&L % | Rynek |
 |--------|-------|-------|-----------------|--------|-------------|---------|-------|-------|
 | MSF.DE | Microsoft | 2.0110 | 350.30 | EUR | 3 024.73 | -4.33 | -0.14% | EU |
-| SNT | Synektik | 13.2731 | 289.80 | PLN | 3 636.83 | -209.72 | -5.45% | GPW |
+| SNT | Synektik | 14.2915 | 289.62 | PLN | 4 110.27 | -28.87 | -0.70% | GPW |
 
-**Łącznie IKE Żony: 6 661.56 PLN | P&L: -214.05 PLN (-3.11%)**
-Wolne środki: 0.00 PLN | Pozostały limit IKE 2026: ~21 510 PLN
+**Łącznie IKE Żony: 7 135.00 PLN | P&L: -33.20 PLN (-0.46%)**
+Wolne środki: ~7.11 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
 - Łączna wartość: 46 551.0 PLN

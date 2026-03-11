@@ -21,6 +21,7 @@
 | 2026-03-10 | SPRZEDAJ | DNP | -8.3973 (→72.0326) | ~41.66 PLN | Redukcja GPW zgodnie ze strategią — rotacja kapitału z polskiego retail do globalnej energii jądrowej |
 | 2026-03-10 | KUP | NXE | +7.5990 (→50.2193) | ~12.84 USD | Pozytywne informacje o spółce + teza: zapotrzebowanie na uran może się podwoić do 2040 (nowe reaktory SMR, dekarbonizacja). NexGen (projekt Rook I, Kanada) — jeden z największych nieodkrytych złóż uranu na świecie. Razem z CCJ ekspozycja na uran wynosi ~20.8% portfela. |
 | 2026-03-10 | KUP | AMZN | +0.2551 (→8.9882) | 214.45 USD | DCA, stosunkowo dobra cena, wiara w AI i cloud (teza długoterminowa) |
+| 2026-03-11 | KUP | SNT | +1.0184 (→14.2915) | 287.60 PLN | Uśrednienie przed spin-offem Syn2bio (planowany kwiecień 2026) — katalizator cenowy w horyzoncie ~4 tygodni. IKE Żony. |
 
 ## Instrukcja
 Log jest uzupełniany automatycznie przy każdym użyciu `/kup` lub `/sprzedaj`.
