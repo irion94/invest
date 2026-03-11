@@ -3,7 +3,7 @@
 # Uruchamiany przez cron o 9:30 i 16:00 w dni robocze
 # Użycie: ./tools/market-report.sh
 
-set -euo pipefail
+set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
