@@ -38,7 +38,7 @@ Wolne środki: ~7.11 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 - Pozycji: 12
 
 ## Alokacja sektorowa
-- Polska / GPW: ~42.4% (ACP + KRU + DNP + SNT + ATD) ⚠️ CEL: zmniejszyć do 20%
+- Polska / GPW: ~42.4% (ACP + KRU + DNP + SNT + ATD) — CEL: 20% osiągany przez DCA VWCE, nie sprzedaż GPW
 - BigTech / AI: ~21.0% (AMZN + MSF.DE)
 - Energia jądrowa: ~17.9% (CCJ + NXE)
 - ETF tematyczne: ~8.5% (QUTM)
@@ -48,7 +48,7 @@ Wolne środki: ~7.11 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 ## Uwagi
 - SNT: NIE SPRZEDAWAĆ przed spin-offem Syn2bio (planowany kwiecień 2026)
 - NVO: w strefie STRONG BUY (~$39, spadek 73% od ATH)
-- DNP: ⚠️ STOP BUYING — GPW przekracza 42%, cel to 20%. Rozważyć redukcję.
+- DNP/ACP/KRU/ATD: NIE sprzedawać bez powodu fundamentalnego (słabe wyniki, zmiana tezy). Redukcja GPW przez kierowanie nowych wpłat do VWCE — nie przez przymusową sprzedaż.
 - NXE: zwiększona pozycja (42.6 → 50.2 szt.) — teza: energia jądrowa + SMR
 - VWCE.DE: ~5.1% (2375 PLN) — CEL: 35%, kontynuować regularne zakupy DCA na IKE
 
