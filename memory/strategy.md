@@ -1,6 +1,6 @@
 # Strategia Inwestycyjna
 
-Ostatnia aktualizacja: 2026-03-10
+Ostatnia aktualizacja: 2026-03-11
 
 ## Cele
 - Wolność finansowa do 2046 (horyzont 20 lat)
@@ -20,10 +20,10 @@ Ostatnia aktualizacja: 2026-03-10
 ## Zasady
 - Max 15-16% portfela w jedną pozycję
 - Docelowa alokacja core-satellite (VWCE 35% + satelity)
-- Polska/GPW max 20% portfela (obecnie 38.8% — do redukcji)
+- Polska/GPW max 20% portfela długoterminowo — cel osiągany przez DCA VWCE, NIE przez sprzedaż GPW
+- GPW: sprzedaż tylko przy pogorszeniu fundamentów (słabe wyniki, zmiana tezy biznesowej)
 - Regularne wpłaty co miesiąc na oba konta IKE
 - Reinwestycja dywidend i zysków
-- NIE sprzedawać gwałtownie — redukcja stopniowa przez 12-18 miesięcy
 
 ## Docelowy model portfela (Core-Satellite)
 
@@ -32,7 +32,7 @@ Ostatnia aktualizacja: 2026-03-10
 | Core VWCE | 0% | 35% | VWCE |
 | BigTech AI | 21.6% | 20% | AMZN + MSF.DE |
 | Energia jądrowa | 17.0% | 18% | CCJ + NXE |
-| Polska / GPW | 38.8% | 20% | ACP + KRU + DNP + SNT |
+| Polska / GPW | 42.4% | 20% | ACP + KRU + DNP + SNT + ATD |
 | Healthcare / GLP-1 | 3.2% | 7% | NVO |
 | ETF tematyczne | 9.9% | 0-5% | QUTM |
 
