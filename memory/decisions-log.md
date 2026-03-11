@@ -22,6 +22,8 @@
 | 2026-03-10 | KUP | NXE | +7.5990 (→50.2193) | ~12.84 USD | Pozytywne informacje o spółce + teza: zapotrzebowanie na uran może się podwoić do 2040 (nowe reaktory SMR, dekarbonizacja). NexGen (projekt Rook I, Kanada) — jeden z największych nieodkrytych złóż uranu na świecie. Razem z CCJ ekspozycja na uran wynosi ~20.8% portfela. |
 | 2026-03-10 | KUP | AMZN | +0.2551 (→8.9882) | 214.45 USD | DCA, stosunkowo dobra cena, wiara w AI i cloud (teza długoterminowa) |
 | 2026-03-11 | KUP | SNT | +1.0184 (→14.2915) | 287.60 PLN | Uśrednienie przed spin-offem Syn2bio (planowany kwiecień 2026) — katalizator cenowy w horyzoncie ~4 tygodni. IKE Żony. |
+| 2026-03-11 | SPRZEDAJ | QUTM.DE | -5.0422 (→45.5366) | ~20.59 EUR | Zmniejszenie ekspozycji na ETF kwantowy — rotacja kapitału do Dino Polska. IKE Twoje. |
+| 2026-03-11 | KUP | DNP | +10.9944 (→83.027) | ~40.66 PLN | Zwiększenie pozycji Dino Polska. ⚠️ Uwaga: zwiększa ekspozycję GPW do 42.4% (cel: 20%). IKE Twoje. |
 
 ## Instrukcja
 Log jest uzupełniany automatycznie przy każdym użyciu `/kup` lub `/sprzedaj`.
