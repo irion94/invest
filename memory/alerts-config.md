@@ -39,6 +39,7 @@
 | SNT | ≤ | 230 | Strong Buy | active | 2026-03-08 |
 | SNT | ≥ | 350 | Sell Zone | active | 2026-03-08 |
 | ATD | ≥ | 3.50 | Sprzedaj → VWCE | active | 2026-03-09 |
+| ATD | RAPORT | 2026-04-01 | Sprawdź wyniki roczne → zdecyduj sprzedaż ATD i zakup NVO | reminder | 2026-03-13 |
 
 ## Status: active / triggered / disabled
 
