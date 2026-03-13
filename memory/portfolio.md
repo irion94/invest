@@ -1,6 +1,6 @@
 # Portfel Inwestycyjny
 
-Ostatnia aktualizacja: 2026-03-11
+Ostatnia aktualizacja: 2026-03-13
 Źródło: XTB app (aktualizacja ręczna)
 
 ## Twoje IKE (XTB)
@@ -14,12 +14,12 @@ Ostatnia aktualizacja: 2026-03-11
 | QUTM.DE | VanEck QUTM | 45.5366 | 20.98 | EUR | 4 003.25 | -96.00 | -2.34% | EU |
 | DNP | Dino Polska | 83.027 | 39.953 | PLN | 3 373.39 | +56.24 | +1.70% | GPW |
 | NVO | Novo Nordisk | 17.0933 | 243.41 | DKK | 2 376.76 | -14.77 | -0.62% | EU |
-| VWCE.DE | Vanguard FTSE All-World | 3.7995 | 146.11 | EUR | 2 375.47 | -9.41 | -0.39% | EU |
+| VWCE.DE | Vanguard FTSE All-World | 4.6951 | 146.15 | EUR | 2 933.01 | -15.36 | -0.52% | EU |
 | NXE | NexGen Energy | 50.2193 | 11.02 | USD | 2 340.55 | +335.45 | +16.73% | US |
 | ATD | Atende | 158 | 3.180 | PLN | 494.54 | -7.90 | -1.57% | GPW |
 
-**Łącznie Twoje IKE: ~39 899 PLN | P&L: +2 193 PLN (+5.82%)**
-Wolne środki: ~74 PLN | Pozostały limit IKE 2026: ~19 498 PLN
+**Łącznie Twoje IKE: ~40 457 PLN | P&L: +2 187 PLN (+5.41%)**
+Wolne środki: ~516 PLN | Pozostały limit IKE 2026: ~18 940 PLN
 
 ## IKE Żony
 
@@ -32,8 +32,8 @@ Wolne środki: ~74 PLN | Pozostały limit IKE 2026: ~19 498 PLN
 Wolne środki: ~7.11 PLN | Pozostały limit IKE 2026: ~21 510 PLN
 
 ## Podsumowanie Rodzinne
-- Łączna wartość: ~47 034 PLN
-- Łączny P&L: +2 160 PLN (+4.81%)
+- Łączna wartość: ~47 592 PLN
+- Łączny P&L: +2 154 PLN (+4.74%)
 - Łączny limit IKE 2026: 41 258 PLN (Ty: ~19 498 | Żona: ~21 510)
 - Pozycji: 12
 

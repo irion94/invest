@@ -25,6 +25,7 @@
 | 2026-03-11 | SPRZEDAJ | QUTM.DE | -5.0422 (→45.5366) | ~20.59 EUR | Zmniejszenie ekspozycji na ETF kwantowy — rotacja kapitału do Dino Polska. IKE Twoje. |
 | 2026-03-11 | KUP | DNP | +10.9944 (→83.027) | ~40.66 PLN | Zwiększenie pozycji Dino Polska. ⚠️ Uwaga: zwiększa ekspozycję GPW do 42.4% (cel: 20%). IKE Twoje. |
 | 2026-03-11 | STRATEGIA | GPW | — | — | Zmiana podejścia do redukcji GPW: NIE sprzedawać polskich akcji bez powodu fundamentalnego (słabe wyniki, zmiana tezy). Cel 20% GPW osiągany organicznie — wszystkie nowe wpłaty kierowane do VWCE.DE. |
+| 2026-03-13 | KUP | VWCE.DE | +0.8956 (→4.6951) | 146.32 EUR | DCA core portfela — budowa pozycji core VWCE na IKE zgodnie ze strategią (cel alokacji: 35%) |
 
 ## Instrukcja
 Log jest uzupełniany automatycznie przy każdym użyciu `/kup` lub `/sprzedaj`.
