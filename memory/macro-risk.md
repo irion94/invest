@@ -1,16 +1,14 @@
 # Global Macro Risk Monitor
 
-Ostatnia aktualizacja: 2026-03-13 (v2 — dane świeże z BLS, S&P Global, FRED, Al Jazeera)
+Ostatnia aktualizacja: 2026-03-13 (v3 — metodologia rozszerzona o geopolitykę /16)
 
-## Recession Risk Score: 2/13 — NISKIE 🟢
+## Recession Risk Score: 5/16 — ŚREDNIE 🟡
 
 *(Zaktualizuj po każdym /makro — porównuj z poprzednim odczytem)*
 
-> ⚠️ **Ostrzeżenie geopolityczne:** Iran war (od 28.02) = Cieśnina Ormuz blokowana, Brent >$100. CPI marzec/kwiecień prawdopodobnie wzrośnie do 3.5–4.0%. Score może wzrosnąć do 3–4/13 po danych marcowych.
-
 ---
 
-## Snapshot — 2026-03-13 (v2)
+## Snapshot — 2026-03-13 (v3)
 
 ### 1. Rynek obligacji
 
@@ -60,17 +58,15 @@ Ostatnia aktualizacja: 2026-03-13 (v2 — dane świeże z BLS, S&P Global, FRED,
 
 *Źródło: [BLS CPI luty 2026](https://www.bls.gov/news.release/cpi.nr0.htm), [Bloomberg](https://www.bloomberg.com/news/articles/2026-03-11/us-cpi-report-february-2026-key-takeaways-on-inflation-core-measure) — 2026-03-11*
 
-### Geopolityka — 🔴 Aktywny kryzys
+### 6. Geopolityka
 
-| Sygnał | Status |
-|--------|--------|
-| USA-Israel vs Iran (od 28.02.2026) | 🔴 Aktywny konflikt zbrojny |
-| Cieśnina Ormuz | 🔴 Faktyczna blokada — 20% globalnej ropy zagrożone |
-| Brent crude | 🔴 >$100/bbl (+25% od wybuchu) — IEA SPR 400 mln bbl bez skutku |
-| Qatar LNG force majeure | 🔴 Ataki dronów na infrastrukturę gazową |
-| Inflacja CPI marzec (est.) | ⚠️ 2.4% → 3.5–4.0% (Carson Group, Bloomberg) |
+| Wskaźnik | Wartość | Sygnał | Komentarz |
+|----------|---------|--------|-----------|
+| Ropa Brent (YoY zmiana) | >+25% r/r (>$100/bbl) | 🔴 | Hormuz blokada; IEA SPR 400 mln bbl bez skutku |
+| Aktywny konflikt zbrojny | USA-Israel vs Iran od 28.02 | 🔴 | 20% globalnej ropy zagrożone; Qatar LNG force majeure |
+| Napięcia handlowe / taryfy | Taryfy Trumpa aktywne; retaliacja trwa | 🔴 | Eksport USA spada 8. miesiąc z rzędu (PMI) |
 
-*Źródło: [Al Jazeera Iran war](https://www.aljazeera.com/economy/2026/3/11/oil-prices-swing-wildly-amid-mixed-messages-over-iran-war), [Kpler Hormuz](https://www.kpler.com/blog/us-iran-conflict-strait-of-hormuz-crisis-reshapes-global-oil-markets), [CSIS](https://www.csis.org/analysis/what-does-iran-war-mean-for-global-energy-markets) — 2026-03-08/13*
+*Źródło: [Al Jazeera Iran war](https://www.aljazeera.com/economy/2026/3/11/oil-prices-swing-wildly-amid-mixed-messages-over-iran-war), [Kpler Hormuz](https://www.kpler.com/blog/us-iran-conflict-strait-of-hormuz-crisis-reshapes-global-oil-markets), [S&P Global PMI](https://www.pmi.spglobal.com/) — 2026-03-08/13*
 
 ---
 
@@ -78,7 +74,8 @@ Ostatnia aktualizacja: 2026-03-13 (v2 — dane świeże z BLS, S&P Global, FRED,
 
 | Data | Score | Poziom | Uwagi |
 |------|-------|--------|-------|
-| 2026-03-13 v2 | 2/13 | 🟢 Niskie | Świeże dane; Iran war = ukryte ryzyko |
+| 2026-03-13 v3 | 5/16 | 🟡 Średnie | Nowa metodologia /16 z geopolityką |
+| 2026-03-13 v2 | 2/13 | 🟢 Niskie | Bez geopolityki — wynik zaniżony |
 | 2026-03-13 v1 | 4/13 | 🟡 Średnie | Częściowe dane; S&P YTD błędnie -9% |
 | 2026-03-09 | 7/13 | 🟠 Wysokie | Peak strachu po pierwszych dniach Iranu |
 
@@ -86,10 +83,10 @@ Ostatnia aktualizacja: 2026-03-13 (v2 — dane świeże z BLS, S&P Global, FRED,
 
 ## Interpretacja dla portfela
 
-**Techniczny score 2/13 🟢 jest mylący** — Iran war tworzy odroczone ryzyko:
-- CPI marzec (publ. 10.04) może podbić score do 3–4/13
-- VIX 27.47 blisko progu paniki; eskalacja Ormuz → VIX >30 → 🔴
-- NFP 3. miesiąc ujemny — rynek pracy systematycznie się pogarsza
+**Score 5/16 🟡** — geopolityka ujawnia ukryte ryzyko, które w starym systemie /13 nie było widoczne:
+- 3 sygnały makro 🔴: LEI, NFP, — plus 3 geopolityczne 🔴: ropa, Iran, taryfy
+- CPI marzec (publ. 10.04) może podbić score do 6/16
+- VIX 27.47 blisko progu paniki; eskalacja Ormuz → VIX >30 → dodatkowy 🔴
 
 **Dla portfela:**
 - **CCJ/NXE** — Iran conflict WZMACNIA tezę nuklearną (energy security, nie ropa). Trzymać.

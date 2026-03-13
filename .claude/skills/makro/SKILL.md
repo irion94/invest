@@ -34,13 +34,14 @@ Szukaj następujących wskaźników:
 - `"Federal Reserve interest rate 2026"` — stopy Fed
 - `"US CPI inflation March 2026"` — inflacja CPI
 
-### Krok 1b — Geopolityka (Reuters)
+### Krok 1b — Geopolityka (WebSearch)
 
-Pobierz aktualne nagłówki geopolityczne z Reuters:
-- Użyj `WebFetch` na `https://www.reuters.com/world/` — wyciągnij top 5 nagłówków geopolitycznych
-- Szukaj sygnałów: konflikty zbrojne, sankcje, zmiany władzy, kryzysy energetyczne, napięcia handlowe
-- Oceń wpływ na rynki: ⚠️ Podwyższone ryzyko / 🔴 Aktywny kryzys / ✅ Spokój geopolityczny
-- Uwzględnij znaleziska przy ocenie Credit Spread HY, VIX i ogólnego Recession Risk Score
+Szukaj aktualnych danych geopolitycznych:
+- `"oil price Brent crude today 2026"` — cena ropy naftowej Brent
+- `"geopolitical risk conflict war sanctions 2026"` — aktywne konflikty i kryzysy
+- `"trade war tariffs global supply chain 2026"` — napięcia handlowe / taryfy
+
+Dla każdego z 3 wskaźników geopolitycznych przypisz sygnał według progów (patrz Krok 3).
 
 ### Krok 2 — Odczytaj ostatni snapshot
 
@@ -65,24 +66,27 @@ Dla każdego wskaźnika oznacz: ✅ Pozytywny / ⚠️ Neutralny / 🔴 Negatywn
 | Rynki fin. | S&P 500 (YTD) | | | <-20% = 🔴 |
 | Monetarne | Stopa Fed | | | >5.5% = ⚠️ |
 | Monetarne | CPI YoY | | | >4% = ⚠️, >6% = 🔴 |
+| Geopolityka | Ropa Brent (YoY zmiana) | | | >+30% r/r = 🔴, +15–30% = ⚠️ |
+| Geopolityka | Aktywny konflikt zbrojny (wpływ na energię/handel) | | | aktywny kryzys = 🔴, napięcia = ⚠️ |
+| Geopolityka | Napięcia handlowe / taryfy globalne | | | eskalacja taryfowa = 🔴, status quo = ⚠️ |
 
 ### Krok 4 — Oblicz Recession Risk Score
 
-Policz liczbę sygnałów 🔴:
+Policz liczbę sygnałów 🔴 (maksimum 16 — 13 wskaźników makro + 3 geopolityczne):
 
 | Wynik | Poziom ryzyka | Kolor |
 |-------|---------------|-------|
 | 0–2 | Niskie — ekspansja | 🟢 |
-| 3–5 | Średnie — spowolnienie | 🟡 |
-| 6–8 | Wysokie — prawdopodobna recesja | 🟠 |
-| 9+ | Krytyczne — kryzys | 🔴 |
+| 3–6 | Średnie — spowolnienie | 🟡 |
+| 7–10 | Wysokie — prawdopodobna recesja | 🟠 |
+| 11+ | Krytyczne — kryzys | 🔴 |
 
 ### Krok 5 — Wyświetl raport
 
 ```
 ## GLOBAL MACRO RISK MONITOR — [DATA]
 
-### Recession Risk Score: X/13 — [POZIOM] [KOLOR]
+### Recession Risk Score: X/16 — [POZIOM] [KOLOR]
 
 #### 1. Rynek obligacji
 ...
@@ -97,6 +101,9 @@ Policz liczbę sygnałów 🔴:
 ...
 
 #### 5. Płynność i polityka monetarna
+...
+
+#### 6. Geopolityka
 ...
 
 ### Implikacje dla portfela
