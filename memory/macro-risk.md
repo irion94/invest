@@ -1,52 +1,52 @@
 # Global Macro Risk Monitor
 
-Ostatnia aktualizacja: 2026-03-09
+Ostatnia aktualizacja: 2026-03-13
 
-## Recession Risk Score: 7/13 — WYSOKIE 🟠
+## Recession Risk Score: 4/13 — ŚREDNIE 🟡
 
 *(Zaktualizuj po każdym /makro — porównuj z poprzednim odczytem)*
 
 ---
 
-## Snapshot — 2026-03-09
+## Snapshot — 2026-03-13
 
 ### 1. Rynek obligacji
 
 | Wskaźnik | Wartość | Sygnał | Komentarz |
 |----------|---------|--------|-----------|
-| Yield Curve 10Y–2Y | ~+0.3% | ⚠️ | Bardzo płaska, wychodzi z inwersji |
-| Credit Spread HY | ~420 bp | ⚠️ | Podwyższony, rośnie z powodu napięć geopolitycznych |
-| US 10Y Yield | ~4.6% | ⚠️ | Restrykcyjny poziom, ale stabilny |
+| Yield Curve 10Y–2Y | +0.57% (57 bp) | ✅ | Wyraźnie steeper — rynek nie wycenia recesji |
+| Credit Spread HY | ~306 bp | ✅ | Poprawił się z 420bp — apetyt na ryzyko wrócił |
+| US 10Y Yield | 4.26% | ⚠️ | Rośnie z powodu ryzyka inflacyjnego (Iran/ropa) |
 
 ### 2. Aktywność gospodarcza
 
 | Wskaźnik | Wartość | Sygnał | Komentarz |
 |----------|---------|--------|-----------|
-| Global Mfg PMI | ~48.5 | 🔴 | Poniżej 50 — sektor przemysłowy kurczy się |
-| Global Services PMI | ~51.2 | ✅ | Powyżej 50, ale traci momentum |
-| LEI (Conference Board) | Spadek 4 m-ce z rzędu | 🔴 | Silny sygnał spowolnienia |
+| Global Mfg PMI | 51.9 (lut) | ✅ | 44-miesięczny szczyt — silna poprawa z 48.5! |
+| Global Services PMI | 53.4 (lut) | ✅ | 4-miesięczny szczyt, ekspansja w 6/6 sektorach |
+| LEI (Conference Board) | Spadek 5 m-cy z rzędu | 🔴 | Najdłuższa seria od 2022; dane opóźnione (shutdown) |
 
 ### 3. Rynek pracy
 
 | Wskaźnik | Wartość | Sygnał | Komentarz |
 |----------|---------|--------|-----------|
-| Bezrobocie USA | 4.4% | ⚠️ | Wzrost z 4.1% — trend niepokojący |
-| NFP (luty 2026) | -92 000 | 🔴 | Ujemny — duży szok na rynku pracy |
+| Bezrobocie USA | 4.4% | ⚠️ | Poniżej progu 5%, ale trend wzrostowy |
+| NFP (luty 2026) | -92 000 | 🔴 | Trzeci ujemny odczyt z 5 miesięcy — szok na rynku pracy |
 
 ### 4. Rynki finansowe
 
 | Wskaźnik | Wartość | Sygnał | Komentarz |
 |----------|---------|--------|-----------|
-| VIX | ~28 | ⚠️ | Podwyższony, blisko progu paniki |
-| MSCI World (YTD) | ~-8% | ⚠️ | Korekta, ale nie besser rynek |
-| S&P 500 (YTD) | ~-9% | ⚠️ | Korekta — nie osiągnął -20% |
+| VIX | 27.47 | ⚠️ | +56% m/m, blisko progu 30 — rośnie niepokój |
+| MSCI World (YTD) | ~-5% (est.) | ⚠️ | Poniżej szczytu, korekta wojenna; ex-US +11% YTD |
+| S&P 500 (YTD) | ~-9% | ⚠️ | Brak -20% progu bessy, ale istotna korekta |
 
 ### 5. Płynność i polityka monetarna
 
 | Wskaźnik | Wartość | Sygnał | Komentarz |
 |----------|---------|--------|-----------|
-| Stopa Fed | 3.50–3.75% | ✅ | Cykl obniżek trwa — pozytywne |
-| CPI YoY (USA) | ~3.2% | ⚠️ | Powyżej celu 2%, ale spada |
+| Stopa Fed | 3.50–3.75% | ✅ | Bez zmian — kolejna cięcia oczekiwana we wrześniu |
+| CPI YoY (USA) | 2.4% (lut) | ✅ | Spada z ~3.2% — ale Iran/ropa zagrożeniem od marca |
 
 ---
 
@@ -54,18 +54,33 @@ Ostatnia aktualizacja: 2026-03-09
 
 | Data | Score | Poziom |
 |------|-------|--------|
+| 2026-03-13 | 4/13 | 🟡 Średnie |
 | 2026-03-09 | 7/13 | 🟠 Wysokie |
 
 ---
 
 ## Interpretacja dla portfela
 
-**Obecny poziom (7/13 🟠)** oznacza:
-- Rynek pracy wyraźnie się pogarsza (NFP ujemny — sygnał krytyczny)
-- Geopolityka (USA–Iran) destabilizuje sentyment
-- Fed tnie stopy — to amortyzator, ale wolny
-- **Uwaga na:** pozycje cykliczne (CCJ może ucierpieć przy recesji), defensywny VWCE trzyma lepiej
-- **Szansa w turbulencjach:** przeceniony NVO i AMZN mogą być okazją
+**Obecny poziom (4/13 🟡)** — score poprawił się z 7/13 do 4/13, ale z ważnym zastrzeżeniem:
+
+**Dlaczego wynik jest niższy:**
+- Global Mfg PMI skoczył z 48.5 → 51.9 (wypadł z czerwonej strefy)
+- CPI spadło z ~3.2% → 2.4% (bez 🔴)
+- Yield curve steeper (+57bp vs +0.3% wcześniej)
+
+**Dlaczego nie świętować:**
+- NFP ujemny trzeci raz w ciągu 5 miesięcy — trend alarmujący
+- VIX 27.47 (+56% m/m) — rynek nerwowy, blisko progu 30
+- Conflict Iran nie jest w CPI jeszcze — ropa może podbić inflację do ~3.5%
+- LEI spada 5. miesiąc z rzędu — wskaźnik wyprzedzający wskazuje na spowolnienie
+- Bezrobocie 4.4% rośnie — 3-miesięczna średnia NFP < 6K/miesiąc
+
+**Dla Twojego portfela:**
+- **CCJ/NXE** (uran) — defensywne wobec konfliktu na Bliskim Wschodzie (nie ropa), ale wrażliwe na recesję
+- **AMZN** — narażony na spowolnienie konsumpcji, ale recovery widoczny (+4%)
+- **SNT** ⚠️ — -5.9%, spin-off Syn2bio zagrożony jeśli recesja
+- **VWCE.DE** — najlepszy bufor, trzymać
+- International stocks (ex-US) wyraźnie lepsze YTD — uzasadnia VWCE vs S&P
 
 ---
 
