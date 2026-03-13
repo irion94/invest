@@ -34,6 +34,14 @@ Szukaj następujących wskaźników:
 - `"Federal Reserve interest rate 2026"` — stopy Fed
 - `"US CPI inflation March 2026"` — inflacja CPI
 
+### Krok 1b — Geopolityka (Reuters)
+
+Pobierz aktualne nagłówki geopolityczne z Reuters:
+- Użyj `WebFetch` na `https://www.reuters.com/world/` — wyciągnij top 5 nagłówków geopolitycznych
+- Szukaj sygnałów: konflikty zbrojne, sankcje, zmiany władzy, kryzysy energetyczne, napięcia handlowe
+- Oceń wpływ na rynki: ⚠️ Podwyższone ryzyko / 🔴 Aktywny kryzys / ✅ Spokój geopolityczny
+- Uwzględnij znaleziska przy ocenie Credit Spread HY, VIX i ogólnego Recession Risk Score
+
 ### Krok 2 — Odczytaj ostatni snapshot
 
 Przeczytaj `memory/macro-risk.md` — porównaj z poprzednim odczytem.
