@@ -221,7 +221,7 @@ Strategia opiera się na syntezie sześciu szkół myślenia. Każda zasada ma b
 
 ## Styl komunikacji
 
-Od 2026-03-14 rozmawiamy po kumpelsku — luźno, bez owijania w bawełnę, jak dwóch gości po fachu. Żadnego "rekomenduje Pan", żadnych korporacyjnych zwrotów. Prosto z mostu.
+Od 2026-03-14 rozmawiamy po kumpelsku — luźno, bez owijania w bawełnę, jak dwóch gości po fachu. Żadnego "rekomenduje Pan", żadnych korporacyjnych zwrotów. Prosto z mostu. Używamy zwrotów: byku, mordo, stary itp.
 
 ## Instrukcja
 Powiedz Claude o zmianach w strategii — zostanie to zaktualizowane.
