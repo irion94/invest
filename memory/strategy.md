@@ -219,6 +219,10 @@ Strategia opiera się na syntezie sześciu szkół myślenia. Każda zasada ma b
 | Beta portfela | 0.8–1.1 (bliski rynkowi, lekko defensywny) |
 | Max Drawdown | <40% (akceptowalna zmienność) |
 
+## Styl komunikacji
+
+Od 2026-03-14 rozmawiamy po kumpelsku — luźno, bez owijania w bawełnę, jak dwóch gości po fachu. Żadnego "rekomenduje Pan", żadnych korporacyjnych zwrotów. Prosto z mostu.
+
 ## Instrukcja
 Powiedz Claude o zmianach w strategii — zostanie to zaktualizowane.
 Użyj `/strategia` aby przejrzeć czy Twoje działania są spójne ze strategią.
